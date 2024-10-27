@@ -1,0 +1,73 @@
+"use client";
+import Link from 'next/link';
+import NavLink from './NavLink';
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
+import React, { useState } from 'react';
+import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
+
+const NavLinks = [ //matriz de enlaces para el componente NavLink
+    {
+        title: "About",
+        path: "#about"
+    },
+    {
+        title: "Projects",
+        path: "#projects"
+    },
+    {
+        title: "Contact",
+        path: "#contact"
+    }
+]
+
+
+
+const Navbar = () => {
+    const [NavbarOpen, setNavbarOpen] = useState(false); //se inicia en falso
+
+    return (
+        <nav className='fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm bg-opacity-30'>
+            <div className='flex flex-wrap items-center justify-between px-8 md:px-16 py-2'>
+                <Link href={"#main"} className='text-white text-3xl font-logo md:text-4x'>
+                    <Image src={"/imagenes/logo.png"} width={45} height={45} className='transform transition-transform duration-500 hover:-rotate-12' />
+                </Link>
+                {/* Menu de navegacion en Mobile mediante botton */}
+                <div className='mobile-menu md:hidden'>
+                    {
+                        // si el menu no esta abierto, que boton muestra
+                        !NavbarOpen ?
+                            (<button onClick={() => setNavbarOpen(true)}
+                                className='flex items-center px-3 py-2 border border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+                                <Bars3Icon className='h-5 w-5'></Bars3Icon>
+                            </button>)
+                            :
+                            (<button onClick={() => setNavbarOpen(false)}
+                                className='flex items-center px-3 py-2 border border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+                                <XMarkIcon className='h-5 w-5'></XMarkIcon>
+                            </button>)
+                    }
+                </div>
+                {/* Menu de navegacion en desktop */}
+                <div className='menu hidden md:block md:w-auto' id='navbar'>
+                    <ul className='flex md:flex-row md:space-x-8 mt-0'>
+                        {
+                            // Recorre el array NavLinks. 
+                            // "link" es el elemento actual del array (cada objeto con "title" y "path").
+                            // "index" es el índice de cada elemento en el array (su posición: 0, 1, 2...).
+                            NavLinks.map((link, index) => (
+                                <li key={index}>
+                                    <NavLink href={link.path} title={link.title} />
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+            </div>
+            {/* La propiedad que recibe MenuOverlay es un array  */}
+            {NavbarOpen ? <MenuOverlay links={NavLinks} /> : null}
+        </nav>
+    )
+}
+
+export default Navbar

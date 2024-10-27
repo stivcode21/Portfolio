@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modificado para fondo negro y escala de grises -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 500" style="enable-background:new 0 0 750 500;" xml:space="preserve">
+<g id="BACKGROUND">
+	<rect style="fill:#000000;" width="750" height="500"/>
+</g>
+<g id="OBJECTS">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="750" height="500"/>
+		</defs>
+		<clipPath id="SVGID_00000111165579612202595150000004730737956064074882_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		
+		<!-- Gradient de escala de grises -->
+		<linearGradient id="SVGID_00000039851537289619457590000009426590275085031344_" gradientUnits="userSpaceOnUse" x1="-34.0541" y1="362.9094" x2="265.9808" y2="362.9094">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		
+		<path style="clip-path:url(#SVGID_00000111165579612202595150000004730737956064074882_);fill:url(#SVGID_00000039851537289619457590000009426590275085031344_);" d="
+			M247.708,450.927c-28.15-12.355-61.939,4.518-91.722,0.57c-26.266-3.483-41.326-22.558-46.546-47.615
+			c-7.213-34.625,0.48-70.089-5.17-104.866c-6.311-38.842-29.552-70.854-66.726-85.328c-22.755-8.86-47.48-10.319-71.598-7.193
+			v314.33h291.358c10.107-16.511,12.258-44.467,1.765-60.197C256.349,456.55,252.689,453.114,247.708,450.927z"/>
+		
+		<!-- Degradado gris para el contorno -->
+		<linearGradient id="SVGID_00000029038801824231741530000018367645078845933723_" gradientUnits="userSpaceOnUse" x1="-67.5012" y1="338.5369" x2="288.7255" y2="338.5369">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#BEBEBE"/>
+		</linearGradient>
+		
+		<path style="clip-path:url(#SVGID_00000111165579612202595150000004730737956064074882_);fill:none;stroke:url(#SVGID_00000029038801824231741530000018367645078845933723_);stroke-width:0.7703;stroke-miterlimit:10;" d="
+			M270.537,444.014c-26.648-19.698-74.226,5.415-109.916,0.683c-31.477-4.173-49.524-27.033-55.779-57.06
+			c-8.644-41.493,0.576-83.992-6.196-125.667c-7.563-46.547-35.414-84.909-79.962-102.254
+			c-27.268-10.617-56.899-12.366-85.801-8.619v376.682h347.248C288.164,507.774,297.185,463.712,270.537,444.014z"/>
+		
+		<!-- Otro degradado gris en diferentes tonos -->
+		<linearGradient id="SVGID_00000170256010273681324520000011907777945299314097_" gradientUnits="userSpaceOnUse" x1="489.7886" y1="185.9072" x2="720.855" y2="77.595">
+			<stop  offset="0" style="stop-color:#D3D3D3;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#A9A9A9"/>
+		</linearGradient>
+		
+		<path style="clip-path:url(#SVGID_00000111165579612202595150000004730737956064074882_);fill:url(#SVGID_00000170256010273681324520000011907777945299314097_);" d="
+			M402.024-1.323c14.824,3.506,36.534,17.673,59.588,45.548s30.69,68.494,39.197,120.718c2.426,14.892,8.616,42.849,28.752,44.456
+			c17.412,1.39,34.811-13.183,49.469-19.761c13.042-5.853,29.35-13.659,43.546-6.47c17.152,8.687,22.864,28.026,30.244,43.603
+			c14.048,29.65,37.395,50.853,70.721,59.893c8.465,2.296,17.995,4.196,27.697,5.059V-1.323H402.024z"/>
+		
+		<linearGradient id="SVGID_00000027584515959122595830000005607696327968334995_" gradientUnits="userSpaceOnUse" x1="448.9041" y1="209.2119" x2="657.1558" y2="111.594">
+			<stop  offset="0" style="stop-color:#C0C0C0;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#808080"/>
+		</linearGradient>
+		
+		<path style="clip-path:url(#SVGID_00000111165579612202595150000004730737956064074882_);fill:none;stroke:url(#SVGID_00000027584515959122595830000005607696327968334995_);stroke-width:0.8822;stroke-miterlimit:10;" d="
+			M347.846-6.838c41.912,0.756,80.829,28.065,99.182,48.406c26.571,29.45,36.742,95.022,44.155,150.925
+			c4.322,32.591,9.187,45.687,30.656,47.4c18.565,1.482,37.117-14.056,52.745-21.07c13.906-6.241,31.294-14.564,46.43-6.898
+			c18.288,9.262,24.378,29.882,32.247,46.49c14.978,31.614,39.871,54.22,75.404,63.859c9.026,2.448,19.186,4.474,29.531,5.394"/>
+		
+		<!-- Añadir más figuras y cambiar más colores a escala de grises según sea necesario -->
+		
+	</g>
+</g>
+</svg>
