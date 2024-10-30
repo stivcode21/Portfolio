@@ -4,7 +4,7 @@ import Link from 'next/link'
 //recibe props
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     return (// la clase group se le da el contender padre para que sus hijos reaccionen a sus cambios de estado
-        <div className='rounded-xl shadow-lg border-2'>
+        <div className='rounded-2xl shadow-lg shadow-[#0000005b] hover:shadow-[#6812ea59] border-4 border-[#191A1C] group hover:border-[#6812EA]'>
             <div className="h-52 w-full md:h-52 rounded-t-xl relative group"
                 style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
@@ -16,11 +16,11 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                         <EyeIcon className='h-10 w-10 text-[#ADB7BE] cursor-pointer group-hover/link:text-white absolute top-1/2 transform translate-x-[7px] -translate-y-5' />
                     </Link>
                 </div>
-
             </div>
-            <div className="text-white rounded-b-xl bg-[url(/imagenes/bg-7.svg)] text-right bg-cover bg-center bg-no-repeat pt-4 pb-4 px-4">
-                <h5 className='text-xl text-center pb-2 font-medium tracking-[3px]'>{title}</h5>
-                <div className='text-[#ADB7BE]'>{description}</div>
+            <div className="text-white rounded-b-xl relative bg-gradient-to-bl from-[#191A1C] text-right bg-cover bg-center bg-no-repeat pt-4 pb-4 px-4 z-40">
+                <h5 className='text-xl text-center pb-2 font-medium tracking-[3px] z-40'>{title}</h5>
+                <div className='text-[#ADB7BE] z-40'>{description}</div>
+                <div className="bg-gradient-to-br from-[#6812EA] w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10"></div>
             </div>
         </div>
     )

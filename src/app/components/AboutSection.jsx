@@ -97,24 +97,14 @@ const AboutSection = () => {
 
 
     return (
-        <section className='h-full w-full xl:h-screen z-10 flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16' id='about'
-            style={{ backgroundImage: "url(/imagenes/bg-4.svg)" }} >
-
-            {/*Gradients */}
-            <div className="absolute h-full -z-10 w-full inset-0 bg-gradient-to-t from-transparent via-transparent to-[rgba(0,0,0,0.9)]">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            <div className="absolute h-full -z-10 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-[#000]">
-            </div>
+        <section className='h-full w-full xl:h-screen z-10 bg-[#0F0F0F] flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16' id='about' >
 
             <div className='md:grid md:grid-cols-2 gap-8 z-20 items-center xl:gap-10 sm:my-auto'>
                 <Image src="/imagenes/detective_logo.png" width={400} height={400} alt='about-me' className='m-auto filter invert' />
 
                 <div className='text-left flex flex-col h-full'>
                     <h2 className='text-2xl md:text-3xl text-center font-medium text-white mb-6 pt-5 text-shadow-lg tracking-[15px]'> ABOUT ME </h2>
-                    <p className='text-base text-justify lg:text-lg text-shadow-lg'>
+                    <p className='text-base text-justify lg:text-md text-shadow-lg'>
                         I am a junior web developer with a strong inclination to learn and face new challenges. Over the past few months,
                         I have explored various technologies through online resources, allowing me to gain solid skills in the area.
                         My focus on self-taught learning has taught me to be proactive and adaptable. I am open to collaborating on

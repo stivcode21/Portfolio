@@ -5,18 +5,13 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section className='h-full w-full pt-14 pb-10 xl:mb-0 z-10 bg-center bg-cover bg-no-repeat relative px-8 md:px-16' id='main'
-            style={{ backgroundImage: "url(/imagenes/bg-4.svg)" }}>
-
-            {/*Gradients */}
-            <div className="absolute bottom-[-100px] h-full -z-10 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-[#000]">
-            </div>
+        <section className='h-full w-full bg-[#0F0F0F] pt-14 pb-10 xl:mb-0 z-10 bg-center bg-cover bg-no-repeat relative px-8 md:px-16' id='main'>
 
             <div className='grid grid-cols-1 z-20 lg:grid-cols-12 md:py-24'>
                 <div className='col-span-7 lg:pr-[80px] xl:pr-0 place-self-center text-center sm:text-left'>
 
-                    <h1 className="text-white mb-4 text-4xl font-semibold text-shadow-md">
-                        <span className='text-transparent font-extrabold text-7xl bg-clip-text bg-gradient-to-r from-[#ff007b] to-[#9c004b]'>
+                    <h1 className="text-white mb-4 text-4xl font-semibold text-shadow-sm">
+                        <span className='text-transparent font-extrabold text-7xl bg-clip-text bg-gradient-to-r from-[#6812EA] to-[#ba8cff]'>
                             Hello, I'am{" "}
                         </span>
                         <TypeAnimation //libreria react-type-animationS
@@ -34,36 +29,37 @@ const HeroSection = () => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
-                            className='font-sour' />
+                            className='font-sour font-thin' />
                     </h1>
 
-                    <p className='text-white mb-4 text-lg lg:text-xl text-shadow-xl'>
-                        Passionate about creating modern and functional interfaces. I love learning and facing new challenges,
-                        every day I work to become a full stack developer. Explore my portfolio
-                        and know a little more about my journey in this technological world. ¡I'm always willing to collaborate
-                        and create something amazing!.
-
+                    <p className='text-white mb-4 text-lg lg:text-md text-shadow-xl'>
+                        Each project is a story waiting to be told, and I’m Eager to write new chapters alongside
+                        other creators. Collaboration fuels inspiration and allows us to bring unique ideas to life.
+                        I’m Open to working on interesting projects, whether professional or not. Let’s combine
+                        our strengths and create resonating experiences. Together, we can turn a vision into reality!
                     </p>
 
                     <div>
-                        <button className='px-1 py-1 w-full md:w-fit mt-4 md:mr-4 rounded-full bg-transparent bg-gradient-to-br hover:to-[#DA185B] hover:hover:from-[#fff]'>
-                            <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#2D0040] to-[#DA185B] text-white '>
+                        <button className='px-1 py-1 w-full md:w-fit mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-in-out duration-700'>
+                            <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#0F0F0F] to-[#6812EA] group-hover:from-[#6812EA] group-hover:to-[#0F0F0F] text-white '>
                                 Hire me
                             </span>
                         </button>
 
-                        <button className='px-1 py-1 w-full md:w-fit mt-4 rounded-full bg-transparent bg-gradient-to-br from-[#2D0040] to-[#DA185B] text-white hover:from-[#fff]'>
-                            <span className='block bg-[#83003f] rounded-full px-5 py-2'>
+                        <button className='px-1 py-1 w-full md:w-fit mt-4 rounded-full bg-transparent group bg-gradient-to-br from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white transition-all ease-in-out duration-700'>
+                            <span className='block bg-transparent bg-gradient-to-br from-[#6812EA] to-[#0F0F0F] group-hover:to-[#6812EA] group-hover:from-[#0F0F0F] rounded-full px-5 py-2'>
                                 Downloand CV
                             </span>
                         </button>
                     </div>
                 </div>
                 <div className='col-span-5 place-self-center lg:place-self-end mt-10 lg:mt-0'>
-                    <div className='relative flex justify-center rounded-full bg-cover shadow-xl shadow-black border-2 border-white w-[350px] h-[350px] md:w-[450px] md:h-[450px]'
-                        style={{ backgroundImage: "url(/imagenes/bg-4.svg)" }}>
+                    <div className='relative flex justify-center rounded-full bg-cover shadow-lg shadow-[#6812EA] border-4 border-[#6812EA] w-[350px] h-[350px] md:w-[450px] md:h-[450px]'
+                    >
+                        <div className="bg-gradient-to-br from-[#6812EA] rounded-full opacity-60 w-full h-full absolute transition-all duration-300 top-0 left-0 z-10"></div>
+
                         <Image
-                            className='rounded-l-[140px] rounded-r-[80px] object-cover absolute bottom-5 drop-shadow-2xl left-0'
+                            className='rounded-l-[150px] sm:rounded-l-[120px] hover:scale-[1.03] rounded-r-[80px] object-cover absolute bottom-5 drop-shadow-2xl left-0 z-30 transition-all ease-in-out'
                             src="/imagenes/logo-oficiall.png"
                             alt='hero-image'
                             priority

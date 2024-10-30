@@ -50,3 +50,25 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Estilo personalizado para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #14003a; /* Morado claro para el fondo del riel */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6812ea; /* Morado oscuro para el pulgar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5a0fcc; /* Color del pulgar en hover */
+}
+
+::-webkit-scrollbar-button:active {
+  background-color: #5a0fcc; /* Color de las flechas al hacer clic */
+}
