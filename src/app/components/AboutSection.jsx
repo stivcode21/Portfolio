@@ -1,6 +1,7 @@
 "use client"
 import React, { useTransition, useState } from 'react'
-import TabButton from './tabButton'
+import TabButton from './TabButton'
+
 
 //Esto contendra informacion para cada pestaña
 const TAB_DATA = [
