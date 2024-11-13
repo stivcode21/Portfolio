@@ -59,9 +59,9 @@ const HeroSection = () => {
                         <div className="bg-gradient-to-br from-[#6812EA] rounded-full opacity-60 w-full h-full absolute transition-all duration-300 top-0 left-0 z-10"></div>
 
                         <Image
-                            className='rounded-l-[150px] sm:rounded-l-[120px] hover:scale-[1.03] rounded-r-[80px] object-cover absolute bottom-5 drop-shadow-2xl left-0 z-30 transition-all ease-in-out'
+                            className='rounded-l-[150px] sm:rounded-l-[120px] rounded-r-[80px] object-cover absolute bottom-5 drop-shadow-2xl left-0 z-30 transition-all ease-in-out'
                             src="/imagenes/logo-oficiall.png"
-                            alt='hero-image'
+                            alt='hero image'
                             priority
                             width={400}
                             height={400}

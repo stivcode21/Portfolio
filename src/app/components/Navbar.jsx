@@ -30,7 +30,7 @@ const Navbar = () => {
         <nav className='fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm bg-opacity-30'>
             <div className='flex flex-wrap items-center justify-between px-8 md:px-16 py-2'>
                 <Link href={"#main"} className='text-white text-3xl font-logo md:text-4x'>
-                    <Image src={"/imagenes/logo.png"} width={45} height={45} className='transform transition-transform duration-500 hover:-rotate-12' />
+                    <Image src={"/imagenes/logo.png"} width={45} height={45} className='transform transition-transform duration-500 hover:-rotate-12' alt='logo stiv' />
                 </Link>
                 {/* Menu de navegacion en Mobile mediante botton */}
                 <div className='mobile-menu md:hidden'>

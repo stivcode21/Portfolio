@@ -4,7 +4,7 @@ import Link from 'next/link'
 //recibe props
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     return (// la clase group se le da el contender padre para que sus hijos reaccionen a sus cambios de estado
-        <div className='rounded-2xl shadow-lg shadow-[#0000005b] hover:shadow-[#6812ea59] border-4 border-[#191A1C] group hover:border-[#6812EA]'>
+        <div className='rounded-2xl shadow-lg shadow-[#0000005b] hover:shadow-[#6812ea59] border-4 border-[#191A1C] group hover:border-[#6812EA] hover:scale-[1.03] transition-all ease-in-out'>
             <div className="h-52 w-full md:h-52 rounded-t-xl relative group"
                 style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 

@@ -1,7 +1,47 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const EmailSection = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        subject: '',
+        message: '',
+    });
+    const [status, setStatus] = useState('');
+
+    // Maneja el cambio en los inputs
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [id]: value,
+        }));
+    };
+
+    // Maneja el envío del formulario
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('Enviando...');
+
+        try {
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setStatus('Mensaje enviado con éxito');
+                setFormData({ email: '', subject: '', message: '' });
+            } else {
+                setStatus('Error al enviar el mensaje');
+            }
+        } catch (error) {
+            setStatus('Error al enviar el mensaje');
+        }
+    };
+
     return (
         <section className="grid md:grid-cols-2 py-32 bg-[#0F0F0F] gap-4 relative px-8 md:px-16 bg-center z-10 bg-cover bg-no-repeat" id="contact">
 
@@ -22,13 +62,16 @@ const EmailSection = () => {
                 </div>
             </div>
             <div >
-                <form className="flex flex-col gap-6">
+                <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
                             Your email
                         </label>
-                        <input type="email"
+                        <input
+                            type="email"
                             id="email"
+                            value={formData.email}
+                            onChange={handleChange}
                             className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:outline-[#6812EA] outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             required
                             autoComplete="off"
@@ -39,8 +82,11 @@ const EmailSection = () => {
                         <label htmlFor="subject" className="text-white block mb-2 text-sm font-medium">
                             Subject
                         </label>
-                        <input type="text"
+                        <input
+                            type="text"
                             id="subject"
+                            value={formData.subject}
+                            onChange={handleChange}
                             autoComplete="off"
                             className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:outline-[#6812EA] outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             required
@@ -48,19 +94,22 @@ const EmailSection = () => {
                     </div>
 
                     <div>
-                        <label htmlFor="menssage" className="text-white block mb-2 text-sm font-medium">
+                        <label htmlFor="message" className="text-white block mb-2 text-sm font-medium">
                             Menssage
                         </label>
                         <textarea
-                            name="menssage"
-                            id="menssage"
+                            id="message"
+                            value={formData.message}
+                            onChange={handleChange}
                             className="bg-transparent border focus:outline-[#6812EA] outline-none border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Let's talk about..."
+                            required
                         />
                     </div>
                     <button type="submit" className="bg-gradient-to-br from-[#6812EA] hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
                         Send Menssage
                     </button>
+                    {status && <p className="text-sm text-gray-400">{status}</p>}
                 </form>
             </div>
         </section>
