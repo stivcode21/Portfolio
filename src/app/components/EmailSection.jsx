@@ -46,7 +46,7 @@ const EmailSection = () => {
         <section className="grid md:grid-cols-2 py-32 bg-[#0F0F0F] gap-4 relative px-8 md:px-16 bg-center z-10 bg-cover bg-no-repeat" id="contact">
 
             <div className="z-20">
-                <h5 className="text-xl font-bold text-white my-2">let's Connect</h5>
+                <h5 className="text-xl font-bold text-white my-2">let&apos;s Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     Great things start with a simple hello! Whether you&apos;re a recruiter,
                     a tech enthusiast, or a creative partner, I&apos;d love to hear from you.
