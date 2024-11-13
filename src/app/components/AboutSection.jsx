@@ -1,6 +1,7 @@
 "use client"
 import React, { useTransition, useState } from 'react'
 import TabButton from './TabButton'
+import Image from 'next/image'
 
 
 //Esto contendra informacion para cada pestaña
@@ -52,9 +53,23 @@ const TAB_DATA = [
         title: "Certifications",
         id: "certifications",
         content: (
-            <div className='flex gap-4'>
-                <img className='w-52 h-36 ' src="/imagenes/certificado-freecodecamp.png" alt="certificado 1" />
-                <img className='w-52 h-36 ' src="/imagenes/certificado-udemy.jpg" alt="certificado 2" />
+            <div className="flex gap-4">
+                <Image
+                    className=""
+                    src="/imagenes/certificado-freecodecamp.png"
+                    alt="Certificado de FreeCodeCamp"
+                    width={218}
+                    height={154}
+                    priority
+                />
+                <Image
+                    className=""
+                    src="/imagenes/certificado-udemy.jpg"
+                    alt="Certificado de Udemy"
+                    width={218}
+                    height={154}
+                    priority
+                />
             </div>
         )
     },
@@ -76,13 +91,19 @@ const AboutSection = () => {
         <section className='h-full w-full xl:h-screen z-10 bg-[#0F0F0F] flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16' id='about' >
 
             <div className='md:grid md:grid-cols-2 gap-8 z-20 items-center xl:gap-10 sm:my-auto'>
-                <img src="/imagenes/detective_logo.png" width={400} height={400} alt='about me' className='m-auto filter invert' />
+                <Image
+                    src="/imagenes/detective_logo.png"
+                    width={400}
+                    height={400}
+                    alt='about me'
+                    className='m-auto filter invert'
+                />
 
                 <div className='text-left flex flex-col h-full'>
                     <h2 className='text-2xl md:text-3xl text-center font-medium text-white mb-6 pt-5 text-shadow-lg tracking-[15px]'> ABOUT ME </h2>
                     <p className='text-base text-justify lg:text-md text-shadow-lg'>
-                        I&#39;m a junior web developer with a great passion for learning and facing new challenges. Over the past few months, I have explored various technologies through online resources, allowing me to gain solid skills in the area. My self-taught approach has taught me to be proactive, adaptable and always ready to face challenges.
-                        I seek to collaborate on projects that encourage me to grow and that allow me to contribute my energy and creativity. I&#39;m fully committed to my career and the goal of providing value in a professional environment. I hope to connect with people who share this same passion!
+                        I&apos;m a junior web developer with a great passion for learning and facing new challenges. Over the past few months, I have explored various technologies through online resources, allowing me to gain solid skills in the area. My self-taught approach has taught me to be proactive, adaptable and always ready to face challenges.
+                        I seek to collaborate on projects that encourage me to grow and that allow me to contribute my energy and creativity. I&apos;m fully committed to my career and the goal of providing value in a professional environment. I hope to connect with people who share this same passion!
                     </p>
 
                     <div className='flex flex-row justify-start mt-8'>

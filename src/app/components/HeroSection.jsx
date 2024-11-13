@@ -12,7 +12,7 @@ const HeroSection = () => {
 
                     <h1 className="text-white mb-4 text-4xl font-semibold text-shadow-sm">
                         <span className='text-transparent font-extrabold text-7xl bg-clip-text bg-gradient-to-r from-[#6812EA] to-[#ba8cff]'>
-                            Hello, I'am{" "}
+                            Hello, I&apos;m{" "}
                         </span>
                         <TypeAnimation //libreria react-type-animationS
                             //secuencia consta en el nombre y el tiempo que dura la secuencia
@@ -32,8 +32,8 @@ const HeroSection = () => {
                             className='font-sour font-thin' />
                     </h1>
                     <p className='text-white mb-4 text-lg lg:text-md text-shadow-xl'>
-                        Every project is an opportunity to create something unique. I&#39;m completely committed to my professional development and have a great willingness to face new challenges.
-                        Collaboration is key to transforming ideas into extraordinary results, and I&#39;m ready to work with passionate people. Let&#39;s build something memorable together!
+                        Every project is an opportunity to create something unique. I&apos;m completely committed to my professional development and have a great willingness to face new challenges.
+                        Collaboration is key to transforming ideas into extraordinary results, and I&apos;m ready to work with passionate people. Let&apos;s build something memorable together!
                     </p>
                     <div>
                         <button className='px-1 py-1 w-full md:w-fit mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-in-out duration-700'>

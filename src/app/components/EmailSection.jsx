@@ -48,9 +48,9 @@ const EmailSection = () => {
             <div className="z-20">
                 <h5 className="text-xl font-bold text-white my-2">let's Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
-                    Great things start with a simple hello! Whether you&rsquo;re a recruiter,
-                    a tech enthusiast, or a creative partner, I&rsquo;d love to hear from you.
-                    Let&rsquo;s explore how we can bring bold ideas to life together.
+                    Great things start with a simple hello! Whether you&apos;re a recruiter,
+                    a tech enthusiast, or a creative partner, I&apos;d love to hear from you.
+                    Let&apos;s explore how we can bring bold ideas to life together.
                 </p>
                 <div className="socials flex flex-row gap-3">
                     <Link href="https://github.com/stivcode21">
@@ -95,7 +95,7 @@ const EmailSection = () => {
 
                     <div>
                         <label htmlFor="message" className="text-white block mb-2 text-sm font-medium">
-                            Menssage
+                            Message
                         </label>
                         <textarea
                             id="message"
@@ -107,7 +107,7 @@ const EmailSection = () => {
                         />
                     </div>
                     <button type="submit" className="bg-gradient-to-br from-[#6812EA] hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
-                        Send Menssage
+                        Send Message
                     </button>
                     {status && <p className="text-sm text-gray-400">{status}</p>}
                 </form>
