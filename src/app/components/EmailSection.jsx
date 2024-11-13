@@ -48,9 +48,9 @@ const EmailSection = () => {
             <div className="z-20">
                 <h5 className="text-xl font-bold text-white my-2">let's Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
-                    Great things start with a simple hello! Whether you’re a recruiter,
-                    a tech enthusiast, or a creative partner, I’d love to hear from you.
-                    Let’s explore how we can bring bold ideas to life together.
+                    Great things start with a simple hello! Whether you&rsquo;re a recruiter,
+                    a tech enthusiast, or a creative partner, I&rsquo;d love to hear from you.
+                    Let&rsquo;s explore how we can bring bold ideas to life together.
                 </p>
                 <div className="socials flex flex-row gap-3">
                     <Link href="https://github.com/stivcode21">

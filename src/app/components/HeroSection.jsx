@@ -31,14 +31,10 @@ const HeroSection = () => {
                             repeat={Infinity}
                             className='font-sour font-thin' />
                     </h1>
-
                     <p className='text-white mb-4 text-lg lg:text-md text-shadow-xl'>
-                        Each project is a story waiting to be told, and I’m Eager to write new chapters alongside
-                        other creators. Collaboration fuels inspiration and allows us to bring unique ideas to life.
-                        I’m Open to working on interesting projects, whether professional or not. Let’s combine
-                        our strengths and create resonating experiences. Together, we can turn a vision into reality!
+                        Every project is an opportunity to create something unique. I&#39;m completely committed to my professional development and have a great willingness to face new challenges.
+                        Collaboration is key to transforming ideas into extraordinary results, and I&#39;m ready to work with passionate people. Let&#39;s build something memorable together!
                     </p>
-
                     <div>
                         <button className='px-1 py-1 w-full md:w-fit mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-in-out duration-700'>
                             <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#0F0F0F] to-[#6812EA] group-hover:from-[#6812EA] group-hover:to-[#0F0F0F] text-white '>

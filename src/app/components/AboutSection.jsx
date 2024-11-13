@@ -81,10 +81,8 @@ const AboutSection = () => {
                 <div className='text-left flex flex-col h-full'>
                     <h2 className='text-2xl md:text-3xl text-center font-medium text-white mb-6 pt-5 text-shadow-lg tracking-[15px]'> ABOUT ME </h2>
                     <p className='text-base text-justify lg:text-md text-shadow-lg'>
-                        I am a junior web developer with a strong inclination to learn and face new challenges. Over the past few months,
-                        I have explored various technologies through online resources, allowing me to gain solid skills in the area.
-                        My focus on self-taught learning has taught me to be proactive and adaptable. I am open to collaborating on
-                        interesting projects that challenge me and help me grow. I have made the decision to fully dedicate myself to this career, and I am ready to contribute my energy and creativity in a professional environment. I hope to connect with people who share this passion!
+                        I&#39;m a junior web developer with a great passion for learning and facing new challenges. Over the past few months, I have explored various technologies through online resources, allowing me to gain solid skills in the area. My self-taught approach has taught me to be proactive, adaptable and always ready to face challenges.
+                        I seek to collaborate on projects that encourage me to grow and that allow me to contribute my energy and creativity. I&#39;m fully committed to my career and the goal of providing value in a professional environment. I hope to connect with people who share this same passion!
                     </p>
 
                     <div className='flex flex-row justify-start mt-8'>
