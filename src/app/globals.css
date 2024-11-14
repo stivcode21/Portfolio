@@ -72,3 +72,8 @@ body {
 ::-webkit-scrollbar-button:active {
   background-color: #5a0fcc; /* Color de las flechas al hacer clic */
 }
+
+/* Cambia el color de las viñetas */
+li::marker {
+  color: #6812ea;
+}

@@ -1,5 +1,3 @@
-//endpoint - senf
-//Recibimos los datos del formulario (email, subject, message) desde el cuerpo de la solicitud.
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -12,23 +10,20 @@ export async function POST(req) {
 
     // Enviamos el correo utilizando los datos del formulario
     const { data, error } = await resend.emails.send({
-      from: "Stiv <stivenelcodificador@gmail.com>",
-      to: ["stivenelcodificador@gmail.com"], // Tu dirección de correo para recibir mensajes
+      from: "Stiv <contacto@stivcode.com>",
+      to: ["contacto@stivcode.com"],
       subject: `Nuevo mensaje: ${subject}`,
-      react: (
-        <>
-          <p>
-            <strong>De:</strong> {email}
-          </p>
-          <p>
-            <strong>Asunto:</strong> {subject}
-          </p>
-          <p>
-            <strong>Mensaje:</strong>
-          </p>
-          <p>{message}</p>
-        </>
-      ),
+      html: `
+        <html>
+          <body style="font-family: Arial, sans-serif; color: #222;">
+            <h2>Nuevo mensaje de contacto</h2>
+            <p><strong>De:</strong> ${email}</p>
+            <p><strong>Asunto:</strong> ${subject}</p>
+            <p><strong>Mensaje:</strong></p>
+            <p>${message}</p>
+          </body>
+        </html>
+      `,
     });
 
     if (error) {
