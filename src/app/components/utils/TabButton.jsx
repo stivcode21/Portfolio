@@ -5,7 +5,7 @@ const TabButton = ({ active, selectTab, children }) => {
 
     return (
         <button onClick={selectTab}>
-            <p className={`mr-3 font-bold ${buttonClasses}`}>
+            <p className={`mr-3 font-semibold ${buttonClasses}`}>
                 {children}
             </p>
         </button>

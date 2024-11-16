@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ProjectCard from './utils/ProjectCard'
 import ProjectTag from './utils/ProjectTag'
 import { ProyectsData } from '../data/data'
+import { motion } from 'framer-motion'
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState("Web");
@@ -20,15 +21,23 @@ const ProjectsSection = () => {
     return (
         <>
             <section id='projects' className='px-8 pb-8 bg-[#0F0F0F] md:px-16 bg-center z-10 bg-cover bg-no-repeat relative'>
-
-                <h2 className='pb-4 pt-8 text-2xl md:text-3xl font-medium text-center tracking-[12px] md:tracking-[20px] text-white text-shadow-md'>
+                <motion.h2
+                    initial={{ opacity: 0, translateY: "200px", scale: 0.5 }}
+                    whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className='pt-8 text-2xl md:text-3xl font-medium text-center tracking-[12px] md:tracking-[20px] text-white text-shadow-md'>
                     MY PROYECTS
-                </h2>
-                <div className='text-white flex flex-row justify-start items-center gap-2 py-4'>
+                </motion.h2>
+                <motion.div
+                    initial={{ opacity: 0, translateX: -40 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    viewport={{ once: true }}
+                    className='text-white flex flex-row justify-start items-center gap-2 py-4'>
                     <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
                     <ProjectTag onClick={handleTagChange} name="Games" isSelected={tag === "Games"} />
                     <ProjectTag onClick={handleTagChange} name="Lab" isSelected={tag === "Lab"} />
-                </div>
+                </motion.div>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12'>
                     {filteredProjects.map((project) => ( //el parametro recorre cada uno de los objetos del array
                         <ProjectCard
