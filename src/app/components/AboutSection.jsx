@@ -17,7 +17,7 @@ const AboutSection = () => {
     };
 
     return (
-        <section id='about' className='h-full w-full z-10 bg-[#0F0F0F] flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16 overflow-hidden' >
+        <section id='about' className='h-full md:h-screen w-full z-10 bg-[#0F0F0F] flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16 scroll-mt-16 md:scroll-mt-0' >
             <div className={`md:grid md:grid-cols-2 gap-10 z-20 items-center xl:gap-4 sm:my-auto flex flex-col-reverse md:flex-row`}>
                 <motion.div
                     initial={{ opacity: 0, translateY: "-100px" }}
@@ -35,13 +35,15 @@ const AboutSection = () => {
 
                 <div className='text-left flex flex-col justify-center h-full'>
                     <motion.h2
-                        initial={{ opacity: 0, translateY: "200px", scale: 0.5 }}
+                        initial={{ opacity: 0, translateY: "-50px", scale: 0.5 }}
                         whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className='text-2xl md:text-3xl text-center font-medium text-white mb-4 pt-5 text-shadow-lg tracking-[15px]'> ABOUT ME </motion.h2>
+                        className='py-6 text-2xl md:text-3xl font-medium text-center tracking-[12px] md:tracking-[20px] text-white text-shadow-md'>
+                        ABOUT ME
+                    </motion.h2>
                     <motion.div
-                        initial={{ opacity: 0, translateX: "200px", scale: 0.5 }}
-                        whileInView={{ opacity: 1, translateX: "0", scale: 1 }}
+                        initial={{ opacity: 0, translateY: "200px", scale: 0.5 }}
+                        whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1 }}
                         className="about-section">

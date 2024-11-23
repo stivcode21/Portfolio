@@ -5,6 +5,20 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
+
+    function descargarPDF() {
+        const enlace = document.createElement('a');
+        enlace.href = '/imagenes/CV-StivCode.pdf';
+        enlace.download = 'CV-StivCode.pdf';
+
+        enlace.click();
+    }
+    function sectionContact() {
+        const enlace = document.createElement('a');
+        enlace.href = '#contact';
+        enlace.click();
+    }
+
     return (
         <section id="main" className='h-full bg-[#0F0F0F] pt-14 pb-10 xl:mb-0 z-10 bg-center bg-cover bg-no-repeat relative px-8 md:px-16 overflow-hidden'>
 
@@ -42,13 +56,13 @@ const HeroSection = () => {
                         Collaboration is key to transforming ideas into extraordinary results, and I&apos;m ready to work with passionate people. Let&apos;s build something memorable together!
                     </p>
                     <div>
-                        <button className='px-1 py-1 w-full md:w-fit active:scale-110 mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:animate-sink hover:hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-out duration-400'>
+                        <button onClick={sectionContact} className='px-1 py-1 w-full md:w-fit active:scale-110 mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:animate-sink hover:hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-out duration-400'>
                             <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#0F0F0F] to-[#6812EA] group-hover:from-[#6812EA] group-hover:to-[#0F0F0F] text-white '>
                                 Hire me
                             </span>
                         </button>
 
-                        <button className='px-1 py-1 w-full md:w-fit active:scale-110 mt-4 rounded-full bg-transparent group bg-gradient-to-br hover:animate-sink from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white transition-all ease-out duration-400'>
+                        <button onClick={descargarPDF} className='px-1 py-1 w-full md:w-fit active:scale-110 mt-4 rounded-full bg-transparent group bg-gradient-to-br hover:animate-sink from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white transition-all ease-out duration-400'>
                             <span className='block bg-transparent bg-gradient-to-br from-[#6812EA] to-[#0F0F0F] group-hover:to-[#6812EA] group-hover:from-[#0F0F0F] rounded-full px-5 py-2'>
                                 Downloand CV
                             </span>
