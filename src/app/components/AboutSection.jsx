@@ -29,6 +29,7 @@ const AboutSection = () => {
                         src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FimgAboutt.png?alt=media&token=4d82cad3-2208-4de1-a8de-b01a37c8076a"
                         width={320}
                         height={500}
+                        style={{ width: "auto", height: "auto" }}
                         alt='about me'
                         className='m-auto'
                     />
