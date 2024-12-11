@@ -45,17 +45,12 @@ const Navbar = () => {
         }
     }, []);
 
-    const handleMenuClose = () => {
-        setNavbarOpen(false); // Cambia el estado para cerrar el menú
-    };
-
     return (
-        <nav className={`fixed blur-effect-theme top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md bg-opacity-70 transition-all ease-in-out duration-300
-        ${!navState ? "shadow-none" : "shadow-md shadow-[#00000033]"}
-        `}>
+        <nav className={`fixed blur-effect-theme top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md bg-opacity-70
+        ${!navState ? "shadow-none" : "shadow-md shadow-[#00000033]"}`}>
             <div className='flex flex-wrap items-center justify-between px-8 md:px-16 py-2'>
                 <Link href={"#main"}>
-                    <Image src={"/imagenes/logo.png"} width={45} height={45} priority alt='logo stiv' />
+                    <Image src={"/imagenes/logo.png"} width={45} height={45} className='hover:animate-rotational-wave' alt='logo stiv' />
                 </Link>
                 {/* Menu de navegacion en Mobile mediante botton */}
                 <div className='mobile-menu md:hidden'>
@@ -90,7 +85,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* La propiedad que recibe MenuOverlay es un array  */}
-            {NavbarOpen ? <MenuOverlay links={NavLinks} onClose={handleMenuClose} /> : null}
+            {NavbarOpen ? <MenuOverlay links={NavLinks} /> : null}
         </nav>
     )
 }

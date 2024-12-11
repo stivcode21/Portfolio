@@ -1,7 +1,7 @@
-import { Poppins } from "next/font/google";
+import { Gabarito } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const inter = Gabarito({ subsets: ["latin"] });
 
 export const metadata = {
   title: "StivCode",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={poppins.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
