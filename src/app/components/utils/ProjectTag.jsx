@@ -1,17 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-const ProjectTag = ({ name, onClick, isSelected }) => { //props - nombre, funcion que ejecutara, seleccion actual
-    const buttonStyles = isSelected
-        ? "text-white border-[#6812EA] shadow-sm shadow-[#6812EA]"
-        : "text-[#ADB7BE] border-slate-600 hover:border-white"
+const ProjectTag = ({ name, onClick, isSelected }) => {
+    // Clases dinámicas para el botón
+    const buttonClasses = isSelected
+        ? 'text-[#6812EA] w-full rounded-sm'
+        : 'text-[#ADB7BE] hover:text-[#fff]';
+
+    // Clases dinámicas para el span (barra debajo del texto)
+    const spanClasses = isSelected
+        ? 'bg-[#6812EA] h-[3px] absolute bottom-0 left-0 w-full rounded-full'
+        : 'bg-[#6812EA] h-[3px] absolute bottom-0 left-0 group-hover:animate-fill rounded-full';
 
     return (
-        <button className={`${buttonStyles} rounded-full border-2 px-4 py-1 text-lg cursor-pointer`}
-            onClick={() => onClick(name)}>
-            {/*onClick es la funcion que se va a recibir como prop a la cual le pasamos name como argumento */}
-            {name}
-        </button>
-    )
-}
+        <div className="w-fit text-lg mt-4 font-medium">
+            <button
+                className={`${buttonClasses} cursor-pointer flex gap-x-4 relative group uppercase`}
+                onClick={() => onClick(name)}>
+                {name}
+                <span className={spanClasses}></span>
+            </button>
+        </div>
+    );
+};
 
-export default ProjectTag
+export default ProjectTag;

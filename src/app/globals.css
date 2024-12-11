@@ -50,3 +50,9 @@
 li::marker {
   color: #6812ea;
 }
+
+/*modificacion recaptcha*/
+.grecaptcha-badge {
+  scale: 0.8;
+  transform: translate(40px, 5px);
+}
