@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image' // Import el componente optimizado de Next.js para cargar imágenes.
 import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
 
 const HeroSection = () => {
 
@@ -46,7 +45,7 @@ const HeroSection = () => {
                             repeat={Infinity}
                             className='font-mono' />
                     </h1>
-                    <p className='text-white mb-2 text-lg font-normal tracking-[0.5px] text-justify'>
+                    <p className='text-white mb-2 text-lg font-normal text-justify'>
                         Every project is an opportunity to create something unique. I&apos;m completely committed to my professional development and have a great willingness to face new challenges.
                         Collaboration is key to transforming ideas into extraordinary results, and I&apos;m ready to work with passionate people. Let&apos;s build something memorable together!
                     </p>
@@ -64,21 +63,13 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-                <motion.div
-                    initial={{ opacity: 0, translateX: "100px", scale: 1 }}
-                    whileInView={{ opacity: 1, translateX: "0", }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{
-                        once: true, // Permite que la animación se repita
-                        amount: 0.1, // Activa cuando 10% es visible
-                    }}
-                    className='col-span-5 place-self-center lg:place-self-end mt-10 lg:mt-0 animate-bounce-fade-in'>
+                <div className='col-span-5 place-self-center lg:place-self-end mt-10 lg:mt-0 animate-bounce-fade-in'>
                     <div className='relative flex justify-center items-center rounded-full bg-cover shadow-lg shadow-[#6812EA] border-4 border-[#6812EA] w-[350px] h-[350px] md:w-[400px] md:h-[400px]'>
                         <div className="bg-gradient-to-br from-[#6812EA] rounded-full opacity-60 w-full h-full absolute transition-all duration-300 top-0 left-0 z-10"></div>
 
                         <Image
-                            className='rounded-l-[130px] rounded-r-[80px] object-cover absolute drop-shadow-2xl md:left-4 bottom-5 z-30 transition-all ease-in-out'
-                            src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Flogo.png?alt=media&token=23858596-1db8-4c23-a978-98f44c2e6302"
+                            className='rounded-l-[130px] rounded-r-[80px] object-cover absolute drop-shadow-2xl bottom-5 z-30 transition-all ease-in-out'
+                            src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Flogo.webp?alt=media&token=c5b081ed-dc7f-4607-95fb-2b1eb4734400"
                             alt='hero image'
                             priority
                             width={340}
@@ -86,7 +77,7 @@ const HeroSection = () => {
                             style={{ width: "auto", height: "auto" }}
                         />
                     </div>
-                </motion.div>
+                </div>
             </div>
         </section >
     )

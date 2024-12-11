@@ -26,9 +26,9 @@ const AboutSection = () => {
                     viewport={{ once: true, amount: 0.1, }}
                     className="about-section">
                     <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FimgAboutt.png?alt=media&token=4d82cad3-2208-4de1-a8de-b01a37c8076a"
+                        src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FimgAbout.webp?alt=media&token=d260c597-0c7c-4cbb-90cd-e8e78ae476e6"
                         width={320}
-                        height={500}
+                        height={320}
                         style={{ width: "auto", height: "auto" }}
                         alt='about me'
                         className='m-auto'
@@ -50,7 +50,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1 }}
                         className="about-section">
-                        <p className='text-md text-justify lg:text-lg text-white font-normal tracking-[0.5px]'>
+                        <p className='text-md text-justify lg:text-lg text-white font-normal'>
                             I&apos;m a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML,
                             CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving.
                             I&apos;d love to connect with people who share this same passion.

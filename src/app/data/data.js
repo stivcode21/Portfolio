@@ -34,7 +34,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FURBAN_SHOP.jpg?alt=media&token=dbede912-0733-45b0-967c-13fdbc68b7ee",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FURBAN_SHOP.webp?alt=media&token=7961eda4-731e-41d8-b73b-baab4d8970a5",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/Urban-Shop",
     previewUrl: "https://urban-store-e23bb.web.app/",
@@ -65,7 +65,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMONEY_TRACKING.jpg?alt=media&token=daa13ef5-f498-4fb3-960f-9c46fd0949b9",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMONEY_TRACKING.webp?alt=media&token=0b856503-ab94-4a7d-9e6f-bf0bb2023a76",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/Money-Tracking",
     previewUrl: "https://trackingmoney-fe675.web.app/",
@@ -96,7 +96,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMOVIE_GALLERY.jpg?alt=media&token=0c10fde5-9547-434e-99e0-1556238b5a7e",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMOVIE_GALLERY.webp?alt=media&token=db7a4278-ab23-4c7b-a432-5cc03f9e06b9",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/CINEVERSE",
     previewUrl: "https://cineverce.web.app/",
@@ -132,7 +132,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FWHATSAPP_CLONE.jpg?alt=media&token=4a8cffd7-276f-446d-b740-ebdf3178ff9e",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FWHATSAPP_CLONE.webp?alt=media&token=c7f0ef8c-29e0-47a4-a5ae-f945b01cb2e6",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/Whatsapp_Web-Frontend",
     previewUrl: "https://wpp-clone-98b2e.web.app/",
@@ -158,7 +158,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMUSIC_PLAYER.jpg?alt=media&token=a4082a8c-1482-4386-8d14-1d6b63927285",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FMUSIC-PLAYER.webp?alt=media&token=a438d296-c3ef-4d09-86ba-d599ee081b64",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/MusicPlayer-StivSound",
     previewUrl: "https://stivsound-musicplayer.web.app/",
@@ -184,7 +184,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FUSER_REGISTER.jpg?alt=media&token=d38e64fa-3be5-4409-bd8d-984f26938f66",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FUSER_REGISTER.webp?alt=media&token=8c88a5b4-b4ab-4412-a1f3-2ee666a84b7a",
     tag: ["Web"],
     gitUrl: "https://github.com/stivcode21/User-Register",
     previewUrl: "https://user-register-3a330.web.app/",
@@ -210,7 +210,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FCLOTING_STORE.jpg?alt=media&token=3d461755-c95b-43e9-bf1e-6fdcb6d77860",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FCLOTING_STORE.webp?alt=media&token=f0b89c65-3af0-43e1-a83a-f2bf14edda5b",
     tag: ["Desing"],
     gitUrl: "https://github.com/stivcode21/Clothing-Store",
     previewUrl: "https://cloting-store-80459.web.app",
@@ -251,7 +251,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FDESING-YOUTUBE.jpg?alt=media&token=e25c0847-19de-44c9-90e2-3f0413764eb3",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FDESING-YOUTUBE.webp?alt=media&token=0b86d679-6d60-4858-89b4-57c4cb043e9b",
     tag: ["Desing"],
     gitUrl: "https://github.com/stivcode21/Youtube-Desing",
     previewUrl: "https://desing-f0476.web.app/",
@@ -272,7 +272,7 @@ const ProyectsData = [
       },
     ],
     image:
-      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FDESING-FACEBOOK.jpg?alt=media&token=fa3edf4c-0917-4c2b-9d1d-09e9e4b09efc",
+      "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2FDESING-FACEBOOK.webp?alt=media&token=b87493f1-3242-47ec-8e65-b0f773d94fb9",
     tag: ["Desing"],
     gitUrl: "https://github.com/stivcode21/Desing-Login-Facebook",
     previewUrl: "https://fk-desing.web.app/",
