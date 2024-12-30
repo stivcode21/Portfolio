@@ -6,7 +6,7 @@ import { ProyectsData } from '../data/data'
 import { motion } from 'framer-motion'
 
 const ProjectsSection = () => {
-    const [tag, setTag] = useState("Web");
+    const [tag, setTag] = useState("Featured");
 
     //funcion que selecciona una etiqueta
     const handleTagChange = (newTag) => {
@@ -44,9 +44,9 @@ const ProjectsSection = () => {
                 </div>
                 <div
                     className='text-white flex flex-row justify-center items-center gap-2 py-4'>
-                    <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
+                    <ProjectTag onClick={handleTagChange} name="Featured" isSelected={tag === "Featured"} />
+                    <ProjectTag onClick={handleTagChange} name="Starter" isSelected={tag === "Starter"} />
                     <ProjectTag onClick={handleTagChange} name="Desing" isSelected={tag === "Desing"} />
-                    <ProjectTag onClick={handleTagChange} name="Games" isSelected={tag === "Games"} />
                 </div>
             </section>
         </>
