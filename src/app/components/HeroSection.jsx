@@ -7,8 +7,8 @@ const HeroSection = () => {
 
     function descargarPDF() {
         const enlace = document.createElement('a');
-        enlace.href = '/imagenes/CV-StivCode.pdf';
-        enlace.download = 'CV-StivCode.pdf';
+        enlace.href = '/imagenes/stivcode-cv.pdf';
+        enlace.download = 'stivcode-cv.pdf';
 
         enlace.click();
     }
@@ -45,7 +45,7 @@ const HeroSection = () => {
                             repeat={Infinity}
                             className='font-mono' />
                     </h1>
-                    <p className='text-white mb-2 text-lg font-normal text-justify'>
+                    <p className='text-white mb-2 text-lg font-normal text-balance'>
                         Every project is an opportunity to create something unique. I&apos;m completely committed to my professional development and have a great willingness to face new challenges.
                         Collaboration is key to transforming ideas into extraordinary results, and I&apos;m ready to work with passionate people. Let&apos;s build something memorable together!
                     </p>

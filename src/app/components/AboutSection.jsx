@@ -50,7 +50,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1 }}
                         className="about-section">
-                        <p className='text-md text-justify lg:text-lg text-white font-normal'>
+                        <p className='text-md text-balance lg:text-lg text-white font-normal'>
                             I&apos;m a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML,
                             CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving.
                             I&apos;d love to connect with people who share this same passion.
