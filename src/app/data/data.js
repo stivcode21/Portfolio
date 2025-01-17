@@ -2,6 +2,27 @@
 import Icon from "../components/utils/Icon";
 import Image from "next/image";
 
+const NavLinks = [
+  //matriz de enlaces para el componente NavLink
+  {
+    title: "Main",
+    path: "#main",
+  },
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
+    title: "Projects",
+    path: "#projects",
+  },
+  {
+    title: "Contact",
+    path: "#contact",
+  },
+];
+
+//data projects
 const ProyectsData = [
   {
     id: 1,
@@ -295,8 +316,7 @@ const ProyectsData = [
   },
 ];
 
-//----------------------------------------------------------------------------------------------------------------------------
-
+//Icons skills
 const iconSkills = [
   {
     name: "HTML5",
@@ -370,6 +390,7 @@ const iconSkills = [
   },
 ];
 
+//info de about me
 const TabData = [
   {
     title: "Skills",
@@ -386,7 +407,7 @@ const TabData = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2 ml-2 text-white">
+      <ul className="list-disc pl-2 ml-2  ">
         <li>Disigner web - freecodecamp</li>
         <li>University desigweb - IUdemy</li>
         <li>JavaScript - freecodecamp</li>
@@ -423,4 +444,4 @@ const TabData = [
   },
 ];
 
-export { ProyectsData, TabData };
+export { ProyectsData, TabData, NavLinks };

@@ -1,10 +1,13 @@
+import { useTheme } from '@/app/hooks/ThemeContext';
 import React from 'react';
 
 const ProjectTag = ({ name, onClick, isSelected }) => {
+    const { isDarkMode } = useTheme();
+
     // Clases dinámicas para el botón
     const buttonClasses = isSelected
         ? 'text-[#6812EA] w-full rounded-sm'
-        : 'text-[#ADB7BE] hover:text-[#fff]';
+        : isDarkMode ? "text-light-text hover:text-dark-primary" : "text-[#ADB7BE] hover:text-[#fff]";
 
     // Clases dinámicas para el span (barra debajo del texto)
     const spanClasses = isSelected

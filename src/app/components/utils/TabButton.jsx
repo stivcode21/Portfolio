@@ -1,10 +1,14 @@
+import { useTheme } from '@/app/hooks/ThemeContext';
 import React from 'react';
 
 const TabButton = ({ active, selectTab, children }) => {
+
+    const { isDarkMode } = useTheme();
+
     // Clases dinámicas basadas en el estado activo
     const buttonClasses = active
         ? 'text-[#6812EA] w-full rounded-sm'
-        : 'text-[#ADB7BE] hover:text-[#fff]';
+        : isDarkMode ? "text-light-text hover:text-dark-primary" : "text-[#ADB7BE] hover:text-[#fff]";
 
     const spanClasses = active
         ? 'bg-[#6812EA] h-0.5 absolute bottom-0 left-0 w-full rounded-full'

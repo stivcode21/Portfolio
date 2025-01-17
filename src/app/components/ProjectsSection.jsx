@@ -4,9 +4,11 @@ import ProjectCard from './utils/ProjectCard'
 import ProjectTag from './utils/ProjectTag'
 import { ProyectsData } from '../data/data'
 import { motion } from 'framer-motion'
+import { useTheme } from '../hooks/ThemeContext'
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState("Featured");
+    const { isDarkMode } = useTheme();
 
     //funcion que selecciona una etiqueta
     const handleTagChange = (newTag) => {
@@ -20,13 +22,13 @@ const ProjectsSection = () => {
 
     return (
         <>
-            <section id='projects' className='h-full px-8 pb-8 bg-[#0F0F0F] md:px-16 bg-center z-10 bg-cover bg-no-repeat relative scroll-mt-16'>
+            <section id='projects' className='box h-full pb-8 bg-center z-10 bg-cover bg-no-repeat relative scroll-mt-16'>
                 <motion.h2
                     initial={{ opacity: 0, translateY: "100px", scale: 0.5 }}
                     whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1, }}
-                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-white'>
+                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px]'>
                     MY PROJECTS
                 </motion.h2>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-6'>

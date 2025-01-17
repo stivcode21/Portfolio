@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  .box {
+    @apply w-11/12 m-auto;
+  }
+
+  @media (min-width: 2200px) {
+    .box {
+      @apply w-8/12;
+    }
   }
 }
 

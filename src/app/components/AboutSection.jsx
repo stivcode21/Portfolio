@@ -17,12 +17,12 @@ const AboutSection = () => {
     };
 
     return (
-        <section id='about' className='h-full md:h-screen w-full z-10 bg-[#0F0F0F] flex pb-7 bg-cover bg-center bg-no-repeat relative px-8 md:px-16 scroll-mt-16 md:scroll-mt-0' >
-            <div className={`md:grid md:grid-cols-2 gap-10 z-20 items-center xl:gap-4 sm:my-auto flex flex-col-reverse md:flex-row`}>
+        <section id='about' className='h-full md:h-screen w-full z-10 flex pb-7 bg-cover bg-center bg-no-repeat relative scroll-mt-16 md:scroll-mt-0' >
+            <div className={`box md:grid md:grid-cols-2 gap-10 z-20 items-center xl:gap-4 sm:my-auto flex flex-col-reverse md:flex-row`}>
                 <motion.div
-                    initial={{ opacity: 0, translateY: "-100px" }}
-                    whileInView={{ opacity: 1, translateY: "0" }}
-                    transition={{ duration: 0.5 }}
+                    initial={{ opacity: 0, translateY: "100px", scale: 0.5 }}
+                    whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1, }}
                     className="about-section">
                     <Image
@@ -41,7 +41,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1, }}
-                        className='py-4 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-white'>
+                        className='py-4 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md'>
                         ABOUT ME
                     </motion.h2>
                     <motion.div
@@ -50,7 +50,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1 }}
                         className="about-section">
-                        <p className='text-md text-balance lg:text-lg text-white font-normal'>
+                        <p className='text-md text-balance lg:text-lg font-normal'>
                             I&apos;m a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML,
                             CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving.
                             I&apos;d love to connect with people who share this same passion.

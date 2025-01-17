@@ -3,9 +3,12 @@ import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import Icon from './Icon'
 import { motion } from 'framer-motion'
+import { useTheme } from '@/app/hooks/ThemeContext'
 
 //recibe props
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+    const { isDarkMode } = useTheme();
+
     return (
         <motion.div
             initial={{ scale: 0.7, opacity: 0 }} // Comienza desde abajo con opacidad 0
@@ -16,7 +19,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                 amount: 0.1, // Activa cuando 10% es visible
             }}
             className='projects-section'>
-            <div className='rounded-2xl shadow-lg shadow-[#0000005b] hover:shadow-[#6812ea59] border-4 border-[#191A1C] group hover:border-[#6812EA] hover:scale-[1.03] transition-all ease-in-out'>
+            <div className={`group rounded-2xl shadow-lg shadow-[#0000005b] border-4 ${isDarkMode ? "hover:border-[#000] outline outline-1 outline-[#aaa] hover:shadow-[#000] hover:outline-none" : "border-[#191A1C] hover:border-[#6812EA] hover:shadow-[#6812ea59]"} hover:scale-[1.03] transition-all ease-in-out`}>
                 <div className="h-52 w-full md:h-52 rounded-t-xl relative group"
                     style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
@@ -29,16 +32,16 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="text-white rounded-b-xl relative bg-gradient-to-bl from-[#191A1C] text-right bg-cover bg-center bg-no-repeat py-2 px-4 z-40">
-                    <h5 className='text-xl md:text-xl text-center pb-4 font-medium tracking-[2px] z-40'>{title}</h5>
-                    <div className='text-[#ADB7BE] z-40 flex gap-2 pb-2'>
+                <div className={`${isDarkMode ? "group-hover:from-[#000] group-hover:text-[#fff]  font-semibold" : "from-[#191A1C] font-medium "} rounded-b-xl relative bg-gradient-to-l text-right py-2 px-4 z-40`}>
+                    <h5 className='text-xl md:text-xl text-center pb-4 tracking-[2px] z-40'>{title}</h5>
+                    <div className='z-40 flex gap-2 pb-2'>
                         {
                             description.map((icon, i) => (
                                 <Icon key={i} name={icon.name} path={icon.path} color={icon.color} />
                             ))
                         }
                     </div>
-                    <div className="bg-gradient-to-br from-[#6812EA] w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10"></div>
+                    <div className={`bg-gradient-to-br ${!isDarkMode && "from-[#6812EA]"} w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10`}></div>
                 </div>
             </div>
         </motion.div>

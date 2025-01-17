@@ -62,18 +62,18 @@ const EmailSection = () => {
     };
 
     return (
-        <section className="grid md:grid-cols-2 py-16 md:py-32 bg-[#0F0F0F] gap-4 relative px-8 md:px-16 bg-center z-10 bg-cover bg-no-repeat overflow-hidden" id="contact">
+        <motion.section
+            initial={{ opacity: 0, translateY: "100px", scale: 0.5 }}
+            whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.1, }}
+            className="box grid md:grid-cols-2 py-16 md:py-32 gap-4 relative bg-center z-10 bg-cover bg-no-repeat overflow-hidden" id="contact">
 
             <div className="z-20">
-                <motion.h2
-                    initial={{ opacity: 0, translateY: "-50px", scale: 0.5 }}
-                    whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1, }}
-                    className='py-4 text-2xl md:text-3xl font-semibold tracking-[5px] text-white text-shadow-md uppercase'>
+                <h2 className='py-4 text-2xl md:text-3xl font-semibold tracking-[5px] text-shadow-md uppercase'>
                     let&apos;s Connect
-                </motion.h2>
-                <p className="text-white text-lg mb-4 max-w-md">
+                </h2>
+                <p className="text-lg mb-4 max-w-md">
                     Great things start with a simple hello! Whether you&apos;re a recruiter,
                     a tech enthusiast, or a creative partner, I&apos;d love to hear from you.
                     Let&apos;s explore how we can bring bold ideas to life together.
@@ -91,9 +91,9 @@ const EmailSection = () => {
                 </div>
             </div>
             <div>
-                <form className="w-full h-full flex flex-col gap-6 text-md relative transition-all ease-in-out duration-300 rounded-md" onSubmit={handleSubmit}>
+                <form className="w-full h-full flex flex-col gap-6 text-md relative transition-all ease-in-out rounded-md" onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="email" className="text-white block mb-2 font-medium">
+                        <label htmlFor="email" className="block mb-2 font-medium">
                             Your email
                         </label>
                         <input
@@ -101,14 +101,14 @@ const EmailSection = () => {
                             id="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:outline-[#6812EA] outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:border-[#6812EA] focus:border-2 outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             required
                             autoComplete="off"
                             placeholder="example@gmail.com" />
                     </div>
 
                     <div>
-                        <label htmlFor="subject" className="text-white block mb-2 font-medium">
+                        <label htmlFor="subject" className="block mb-2 font-medium">
                             Subject
                         </label>
                         <input
@@ -117,25 +117,25 @@ const EmailSection = () => {
                             value={formData.subject}
                             onChange={handleChange}
                             autoComplete="off"
-                            className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:outline-[#6812EA] outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-transparent border border-[#33353F] placeholder-[#9CA2A9] focus:border-[#6812EA] focus:border-2 outline-none text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             required
                             placeholder="Just Saying hi!" />
                     </div>
 
                     <div>
-                        <label htmlFor="message" className="text-white block mb-2 font-medium">
+                        <label htmlFor="message" className=" block mb-2 font-medium">
                             Message
                         </label>
                         <textarea
                             id="message"
                             value={formData.message}
                             onChange={handleChange}
-                            className="bg-transparent border focus:outline-[#6812EA] outline-none border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-transparent border focus:border-[#6812EA] focus:border-2 outline-none border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Let's talk about..."
                             required
                         />
                     </div>
-                    <button type="submit" className="bg-gradient-to-br from-[#6812EA] hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
+                    <button type="submit" className="bg-gradient-to-br from-dark-primary to-dark-bg hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
                         Send Message
                     </button>
                     <div>
@@ -143,7 +143,7 @@ const EmailSection = () => {
                     </div>
                 </form>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

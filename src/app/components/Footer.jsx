@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className='w-full px-8 md:px-16 bg-[#0F0F0F] border border-t-[#33353f] border-l-transparent border-r-transparent'>
+        <footer className='w-full border border-t-[#33353f] border-l-transparent border-r-transparent'>
             <div
-                className='py-4 flex justify-between items-center text-gray-600'>
+                className='box py-4 flex justify-between items-center text-gray-600'>
                 <Link href={"#main"}>
                     <Image src={"/imagenes/logo.png"} width={45} height={45} priority alt='logo stiv' />
                 </Link>

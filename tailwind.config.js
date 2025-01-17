@@ -7,10 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      //themes
+      colors: {
+        dark: {
+          bg: "#0F0F0F",
+          primary: "#6812EA",
+          text: "#EEEEEE",
+          textGray: "#ADB7BE",
+        },
+        light: {
+          bg: "#F8F8F8",
+          text: "#000000",
+          textGray: "#AAAAAA",
+        },
+      },
+
       // Drop shadows personalizados
       dropShadow: {
         col: "0 2px 4px #ffffff55",
       },
+
+      //animation
       keyframes: {
         fillWidth: {
           "0%": { width: "0%", transform: "translateX(0)" },
@@ -19,6 +36,9 @@ module.exports = {
       },
       animation: {
         fill: "fillWidth 0.3s ease-in forwards",
+      },
+      fontFamily: {
+        jersey: ['"Jersey 15"', "sans-serif"], // Define un alias para la fuente
       },
     },
   },
