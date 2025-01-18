@@ -19,7 +19,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                 amount: 0.1, // Activa cuando 10% es visible
             }}
             className='projects-section'>
-            <div className={`group rounded-2xl shadow-lg shadow-[#0000005b] border-4 ${isDarkMode ? "hover:border-[#000] outline outline-1 outline-[#aaa] hover:shadow-[#000] hover:outline-none" : "border-[#191A1C] hover:border-[#6812EA] hover:shadow-[#6812ea59]"} hover:scale-[1.03] transition-all ease-in-out`}>
+            <div className={`group rounded-2xl shadow-lg shadow-[#0000005b] border-4 ${isDarkMode ? "hover:border-[#6812EA] outline outline-1 outline-[#aaa] hover:shadow-[#6812EA] hover:outline-none" : "border-[#191A1C] hover:border-[#6812EA] hover:shadow-[#6812ea59]"} hover:scale-[1.03] transition-all ease-in-out`}>
                 <div className="h-52 w-full md:h-52 rounded-t-xl relative group"
                     style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
@@ -32,7 +32,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                         </Link>
                     </div>
                 </div>
-                <div className={`${isDarkMode ? "group-hover:from-[#000] group-hover:text-[#fff]  font-semibold" : "from-[#191A1C] font-medium "} rounded-b-xl relative bg-gradient-to-l text-right py-2 px-4 z-40`}>
+                <div className={`${isDarkMode ? "group-hover:from-[#6812EA] group-hover:to-dark-bg group-hover:text-[#fff]  font-semibold" : "from-[#191A1C] font-medium "} rounded-b-xl relative bg-gradient-to-bl text-right py-2 px-4 z-40`}>
                     <h5 className='text-xl md:text-xl text-center pb-4 tracking-[2px] z-40'>{title}</h5>
                     <div className='z-40 flex gap-2 pb-2'>
                         {
@@ -41,7 +41,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                             ))
                         }
                     </div>
-                    <div className={`bg-gradient-to-br ${!isDarkMode && "from-[#6812EA]"} w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10`}></div>
+                    <div className={`bg-gradient-to-br ${!isDarkMode && "from-[#6812EA] to-dark-bg"} w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10`}></div>
                 </div>
             </div>
         </motion.div>

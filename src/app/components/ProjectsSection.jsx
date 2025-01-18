@@ -28,7 +28,7 @@ const ProjectsSection = () => {
                     whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1, }}
-                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px]'>
+                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md'>
                     MY PROJECTS
                 </motion.h2>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-6'>
