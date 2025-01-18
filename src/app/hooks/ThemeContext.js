@@ -1,29 +1,16 @@
 "use client";
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 // Crear el contexto
 const ThemeContext = createContext();
 
 // Proveedor del contexto
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Lee el tema desde localStorage o usa el modo oscuro por defecto
-    return localStorage.getItem("theme") === "light";
-  });
+  const [isDarkMode, setIsDarkMode] = useState(false); // Valor inicial por defecto
 
   const toggleTheme = () => {
-    setIsDarkMode((prevTheme) => {
-      const newTheme = !prevTheme;
-      localStorage.setItem("theme", newTheme ? "light" : "dark");
-      return newTheme;
-    });
+    setIsDarkMode(!isDarkMode);
   };
-
-  useEffect(() => {
-    document.documentElement.className = isDarkMode
-      ? "bg-light-bg text-light-text"
-      : "bg-dark-bg text-dark-text";
-  }, [isDarkMode]);
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
