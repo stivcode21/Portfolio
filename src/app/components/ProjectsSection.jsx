@@ -5,10 +5,13 @@ import ProjectTag from './utils/ProjectTag'
 import { ProyectsData } from '../data/data'
 import { motion } from 'framer-motion'
 import { useTheme } from '../hooks/ThemeContext'
+import { useTranslations } from 'next-intl'
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState("Featured");
     const { isDarkMode } = useTheme();
+
+    const t = useTranslations("Projects")
 
     //funcion que selecciona una etiqueta
     const handleTagChange = (newTag) => {
@@ -28,8 +31,8 @@ const ProjectsSection = () => {
                     whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1, }}
-                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md'>
-                    MY PROJECTS
+                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md uppercase'>
+                    {t("title")}
                 </motion.h2>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-6'>
                     {filteredProjects.map((project) => ( //el parametro recorre cada uno de los objetos del array
@@ -46,9 +49,9 @@ const ProjectsSection = () => {
                 </div>
                 <div
                     className='text-white flex flex-row justify-center items-center gap-2 py-4'>
-                    <ProjectTag onClick={handleTagChange} name="Featured" isSelected={tag === "Featured"} />
-                    <ProjectTag onClick={handleTagChange} name="Starter" isSelected={tag === "Starter"} />
-                    <ProjectTag onClick={handleTagChange} name="Desing" isSelected={tag === "Desing"} />
+                    <ProjectTag onClick={handleTagChange} name="Featured" title={t("featured")} isSelected={tag === "Featured"} />
+                    <ProjectTag onClick={handleTagChange} name="Starter" title={t("starter")} isSelected={tag === "Starter"} />
+                    <ProjectTag onClick={handleTagChange} name="Desing" title={t("desing")} isSelected={tag === "Desing"} />
                 </div>
             </section>
         </>

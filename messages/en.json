@@ -1,6 +1,35 @@
 {
   "HomePage": {
     "title": "Hello, I am",
-    "about": "vamo hacia"
+    "paragraph": "Every project is an opportunity to create something unique. I'm completely committed to my professional development and have a great willingness to face new challenges. Collaboration is key to transforming ideas into extraordinary results, and I'm ready to work with passionate people. Let's build something memorable together!",
+    "button-1": "Hire me",
+    "button-2": "Download CV"
+  },
+  "Navbar": {
+    "main": "main",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "About": {
+    "title": "About me",
+    "paragraph": "I'm a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML, CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving. I'd love to connect with people who share this same passion.",
+    "skills": "Skills",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "featured": "Featured",
+    "starter": "Starter",
+    "desing": "Desing"
+  },
+  "Email": {
+    "title": "let's Connect",
+    "paragraph": "¡Las grandes cosas comienzan con un simple saludo! Si eres un reclutador, un entusiasta de la tecnología o un socio creativo, me encantaría saber de ti. Exploremos cómo podemos hacer realidad ideas audaces juntos.",
+    "youEmail": "Your email",
+    "subject": "Subject",
+    "message": "Message",
+    "button": "Send Message"
   }
 }

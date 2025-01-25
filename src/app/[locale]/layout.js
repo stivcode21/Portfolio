@@ -21,7 +21,7 @@ export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} translate="no">
       <body className={poppins.className}>
         <NextIntlClientProvider messages={messages}>
           {children}

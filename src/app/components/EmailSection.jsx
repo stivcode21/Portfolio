@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { RingLoader } from "react-spinners"; //spinner
+import { useTranslations } from "next-intl";
 
 const EmailSection = () => {
     const [formData, setFormData] = useState({
@@ -10,7 +11,9 @@ const EmailSection = () => {
         subject: '',
         message: '',
     });
+
     const [status, setStatus] = useState(null);
+    const t = useTranslations("Email");
 
     // Maneja el cambio en los inputs
     const handleChange = (e) => {
@@ -71,12 +74,10 @@ const EmailSection = () => {
 
             <div className="z-20">
                 <h2 className='py-4 text-2xl md:text-3xl font-semibold tracking-[5px] text-shadow-md uppercase'>
-                    let&apos;s Connect
+                    {t("title")}
                 </h2>
                 <p className="text-lg mb-4 max-w-md">
-                    Great things start with a simple hello! Whether you&apos;re a recruiter,
-                    a tech enthusiast, or a creative partner, I&apos;d love to hear from you.
-                    Let&apos;s explore how we can bring bold ideas to life together.
+                    {t("paragraph")}
                 </p>
                 <div className="socials flex flex-row gap-4 mb-6 md:mb-0">
                     <Link href="https://github.com/stivcode21" target='_blank'>
@@ -94,7 +95,7 @@ const EmailSection = () => {
                 <form className="w-full h-full flex flex-col gap-6 text-md relative transition-all ease-in-out rounded-md" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="email" className="block mb-2 font-medium">
-                            Your email
+                            {t("youEmail")}
                         </label>
                         <input
                             type="email"
@@ -109,7 +110,7 @@ const EmailSection = () => {
 
                     <div>
                         <label htmlFor="subject" className="block mb-2 font-medium">
-                            Subject
+                            {t("subject")}
                         </label>
                         <input
                             type="text"
@@ -124,7 +125,7 @@ const EmailSection = () => {
 
                     <div>
                         <label htmlFor="message" className=" block mb-2 font-medium">
-                            Message
+                            {t("message")}
                         </label>
                         <textarea
                             id="message"
@@ -136,7 +137,7 @@ const EmailSection = () => {
                         />
                     </div>
                     <button type="submit" className="bg-gradient-to-br from-dark-primary to-dark-bg hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
-                        Send Message
+                        {t("button")}
                     </button>
                     <div>
                         {status && <div className="absolute w-full h-full top-0 left-0 bg-transparent backdrop-blur-sm bg-opacity-30 text-white text-lg p-4 flex justify-center items-center transition-all ease-in-out duration-300 rounded-md">{status}</div>}

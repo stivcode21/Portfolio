@@ -1,7 +1,7 @@
 import { useTheme } from '@/app/hooks/ThemeContext';
 import React from 'react';
 
-const ProjectTag = ({ name, onClick, isSelected }) => {
+const ProjectTag = ({ name, title, onClick, isSelected }) => {
     const { isDarkMode } = useTheme();
 
     // Clases dinámicas para el botón
@@ -19,7 +19,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
             <button
                 className={`${buttonClasses} cursor-pointer flex gap-x-4 relative group`}
                 onClick={() => onClick(name)}>
-                {name}
+                {title}
                 <span className={spanClasses}></span>
             </button>
         </div>

@@ -2,26 +2,6 @@
 import Icon from "../components/utils/Icon";
 import Image from "next/image";
 
-const NavLinks = [
-  //matriz de enlaces para el componente NavLink
-  {
-    title: "Main",
-    path: "#main",
-  },
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
-
 //data projects
 const ProyectsData = [
   {
@@ -444,4 +424,4 @@ const TabData = [
   },
 ];
 
-export { ProyectsData, TabData, NavLinks };
+export { ProyectsData, TabData };

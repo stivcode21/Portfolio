@@ -4,11 +4,14 @@ import TabButton from './utils/TabButton'
 import Image from 'next/image'
 import { TabData } from '../data/data'
 import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl'
 
 //estado contrendra informacion sobre que pestaña estara abierta -  de forma predeterminada sera skills
 const AboutSection = () => {
     const [tab, setTab] = useState("skills")
     const [isPending, startTransition] = useTransition();  //controla el cambio de transicion que usaremos detro de la funcion de manejo cambio de pestaña
+
+    const t = useTranslations("About");
 
     const handleTabChange = (id) => { //toma el id y luego conmienza la transicion que actualiza la interfaz
         startTransition(() => {
@@ -41,8 +44,8 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1, }}
-                        className='py-4 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md'>
-                        ABOUT ME
+                        className='py-4 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md uppercase'>
+                        {t("title")}
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, translateY: "200px", scale: 0.5 }}
@@ -51,20 +54,18 @@ const AboutSection = () => {
                         viewport={{ once: true, amount: 0.1 }}
                         className="about-section">
                         <p className='text-md text-balance lg:text-lg font-normal'>
-                            I&apos;m a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML,
-                            CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving.
-                            I&apos;d love to connect with people who share this same passion.
+                            {t("paragraph")}
                         </p>
 
                         <div className='flex flex-row justify-start mt-6'>
                             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
-                                Skills
+                                {t("skills")}
                             </TabButton>
                             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
-                                Education
+                                {t("education")}
                             </TabButton>
                             <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>
-                                Certifications
+                                {t("certifications")}
                             </TabButton>
                         </div>
                         {/*recorre cada elemento del array busca el primer elemento que cumple una condición, cada vez que sea true toma ejecuta la propiedad content*/}

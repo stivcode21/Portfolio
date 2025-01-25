@@ -1,6 +1,35 @@
 {
   "HomePage": {
     "title": "hola, soy",
-    "about": "Go to the about page"
+    "paragraph": "Cada proyecto es una oportunidad para crear algo único. Estoy completamente comprometido con mi desarrollo profesional y tengo una gran disposición para enfrentar nuevos desafíos. La colaboración es clave para transformar ideas en resultados extraordinarios y estoy listo para trabajar con personas apasionadas. ¡Construyamos juntos algo memorable!",
+    "button-1": "Contrateme",
+    "button-2": "Descargar CV"
+  },
+  "Navbar": {
+    "main": "principal",
+    "about": "sobre",
+    "projects": "proyectos",
+    "contact": "contacto"
+  },
+  "About": {
+    "title": "Sobre mi",
+    "paragraph": "Soy un desarrollador frontend junior apasionado por crear sitios web responsivos y fáciles de usar. A través del autoestudio, he desarrollado sólidas habilidades en tecnologías web como HTML, CSS, JavaScript, React y más. Actualmente, estoy ampliando mis conocimientos con el desarrollo de juegos en Unity, combinando mi experiencia web con un enfoque creativo en la resolución de problemas. Me encantaría conectarme con personas que comparten esta misma pasión.",
+    "skills": "Habilidades",
+    "education": "Educacion",
+    "certifications": "Certificaciones"
+  },
+  "Projects": {
+    "title": "Mis Proyectos",
+    "featured": "Destacado",
+    "starter": "Basico",
+    "desing": "Diseño"
+  },
+  "Email": {
+    "title": "Conectemos",
+    "paragraph": "¡Las grandes cosas comienzan con un simple saludo! Si eres un reclutador, un entusiasta de la tecnología o un socio creativo, me encantaría saber de ti. Exploremos cómo podemos hacer realidad ideas audaces juntos.",
+    "youEmail": "Tu Email",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "button": "Enviar mensaje"
   }
 }

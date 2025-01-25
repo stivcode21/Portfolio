@@ -29,13 +29,9 @@ module.exports = {
 
       //animation
       keyframes: {
-        "0%": {
-          transform: "translateY(-100%})",
-          opacity: "0",
-        },
-        "100%": {
-          transform: "translateY(0)",
-          opacity: "1",
+        slideDownFadeIn: {
+          "0%": { transform: "translatey(-100%)", opacity: "0", scale: "0" },
+          "100%": { transform: "translatey(0)", opacity: "1", scale: "1" },
         },
         fillWidth: {
           "0%": { width: "0%", transform: "translateX(0)" },
@@ -44,7 +40,7 @@ module.exports = {
       },
       animation: {
         fill: "fillWidth 0.3s ease-in forwards",
-        slideDownFadeIn: "slideDownFadeIn 2s ease-out",
+        slideDownFadeIn: "slideDownFadeIn 0.1s ease-in-out",
       },
       fontFamily: {
         jersey: ['"Jersey 15"', "sans-serif"], // Define un alias para la fuente

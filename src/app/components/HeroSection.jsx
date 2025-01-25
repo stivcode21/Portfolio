@@ -52,19 +52,18 @@ const HeroSection = () => {
                             className='uppercase' />
                     </h1>
                     <p className={`${isDarkMode ? "text-light-text" : "text-dark-text"} mb-2 text-lg font-normal text-balance`}>
-                        Every project is an opportunity to create something unique. I&apos;m completely committed to my professional development and have a great willingness to face new challenges.
-                        Collaboration is key to transforming ideas into extraordinary results, and I&apos;m ready to work with passionate people. Let&apos;s build something memorable together!
+                        {t("paragraph")}
                     </p>
                     <div>
                         <button onClick={sectionContact} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-out duration-400'>
                             <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#0F0F0F] to-[#6812EA] group-hover:from-[#6812EA] group-hover:to-[#0F0F0F] text-white '>
-                                Hire me
+                                {t("button-1")}
                             </span>
                         </button>
 
                         <button onClick={descargarPDF} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 rounded-full bg-transparent group bg-gradient-to-br from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white transition-all ease-out duration-400'>
                             <span className='block bg-transparent bg-gradient-to-br from-[#6812EA] to-[#0F0F0F] group-hover:to-[#6812EA] group-hover:from-[#0F0F0F] rounded-full px-5 py-2'>
-                                Download CV
+                                {t("button-2")}
                             </span>
                         </button>
                     </div>

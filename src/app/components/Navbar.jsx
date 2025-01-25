@@ -1,22 +1,23 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { NavLinks } from '../data/data';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import NavLink from './utils/NavLink';
 import MenuOverlay from './utils/MenuOverlay';
-import { Bars3Icon, LanguageIcon, XMarkIcon } from "@heroicons/react/24/solid"
-import Image from 'next/image';
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import ThemeButton from './utils/ThemeButton';
 import { useTheme } from '../hooks/ThemeContext';
 import LanguageMenu from './utils/LanguageMenu';
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
     const [NavbarOpen, setNavbarOpen] = useState(false);
     const [navState, setNavState] = useState(false);
 
-
     const { isDarkMode } = useTheme();
+    const t = useTranslations("Navbar");
 
+    //al bajar 40px cambiara o no el estado
     const onNavScroll = () => {
         if (window.scrollY > 40) {
             setNavState(true)
@@ -25,6 +26,7 @@ const Navbar = () => {
         }
     }
 
+    //evento que para escuchar el scroll
     useEffect(() => {
         window.addEventListener('scroll', onNavScroll)
 
@@ -33,9 +35,30 @@ const Navbar = () => {
         }
     }, []);
 
+    // Cambia el estado para cerrar el menú
     const handleMenuClose = () => {
-        setNavbarOpen(false); // Cambia el estado para cerrar el menú
+        setNavbarOpen(false);
     };
+
+    const NavLinks = [
+        //matriz de enlaces para el componente NavLink
+        {
+            title: t("main"),
+            path: "#main",
+        },
+        {
+            title: t("about"),
+            path: "#about",
+        },
+        {
+            title: t("projects"),
+            path: "#projects",
+        },
+        {
+            title: t("contact"),
+            path: "#contact",
+        },
+    ];
 
     return (
         <nav className={`fixed blur-effect-theme top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md bg-opacity-70 transition-all ease-in-out duration-300
