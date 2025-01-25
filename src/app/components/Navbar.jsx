@@ -1,17 +1,19 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { NavLinks } from '../data/data';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import NavLink from './utils/NavLink';
 import MenuOverlay from './utils/MenuOverlay';
 import { Bars3Icon, LanguageIcon, XMarkIcon } from "@heroicons/react/24/solid"
 import Image from 'next/image';
 import ThemeButton from './utils/ThemeButton';
 import { useTheme } from '../hooks/ThemeContext';
+import LanguageMenu from './utils/LanguageMenu';
 
 const Navbar = () => {
     const [NavbarOpen, setNavbarOpen] = useState(false);
     const [navState, setNavState] = useState(false);
+
 
     const { isDarkMode } = useTheme();
 
@@ -40,14 +42,16 @@ const Navbar = () => {
         ${!navState ? "shadow-none" : "shadow-md shadow-[#00000033]"}
         `}>
             <div className='box flex flex-wrap items-center justify-between py-2'>
+                {/* logo */}
                 <Link href={"#main"}>
                     <Image src={"/imagenes/logo.png"} width={45} height={45} priority alt='logo stiv' />
                 </Link>
+
                 {/* Menu de navegacion en Mobile mediante botton */}
                 <div className='mobile-menu md:hidden flex items-center gap-6'>
                     <div className='flex items-center gap-4'>
                         <ThemeButton />
-                        <LanguageIcon className={`w-6 h-6 ${isDarkMode ? "fill-light-text hover:fill-light-textGray" : "fill-dark-textGray hover:fill-dark-text"}`} />
+                        <LanguageMenu />
                     </div>
                     {
                         // si el menu no esta abierto, que boton muestra
@@ -65,11 +69,9 @@ const Navbar = () => {
                 </div>
                 {/* Menu de navegacion en desktop */}
                 <div className='menu hidden md:block md:w-auto' id='navbar'>
-                    <ul className='flex md:flex-row md:space-x-2 mt-0 items-center'>
+                    <ul className='flex md:flex-row md:space-x-2 mt-0 items-center justify-center'>
                         {
                             // Recorre el array NavLinks. 
-                            // "link" es el elemento actual del array (cada objeto con "title" y "path").
-                            // "index" es el índice de cada elemento en el array (su posición: 0, 1, 2...).
                             NavLinks.map((link, index) => (
                                 <li key={index}>
                                     <NavLink href={link.path} title={link.title} />
@@ -78,7 +80,7 @@ const Navbar = () => {
                         }
                         <div className='pl-2 flex items-center gap-2'>
                             <ThemeButton />
-                            <LanguageIcon className={`w-6 h-6 ${isDarkMode ? "fill-light-text hover:fill-light-textGray" : "fill-dark-textGray hover:fill-dark-text"}`} />
+                            <LanguageMenu />
                         </div>
                     </ul>
                 </div>

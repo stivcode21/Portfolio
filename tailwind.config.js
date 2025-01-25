@@ -29,6 +29,14 @@ module.exports = {
 
       //animation
       keyframes: {
+        "0%": {
+          transform: "translateY(-100%})",
+          opacity: "0",
+        },
+        "100%": {
+          transform: "translateY(0)",
+          opacity: "1",
+        },
         fillWidth: {
           "0%": { width: "0%", transform: "translateX(0)" },
           "100%": { width: "100%", transform: "translateX(0)" },
@@ -36,6 +44,7 @@ module.exports = {
       },
       animation: {
         fill: "fillWidth 0.3s ease-in forwards",
+        slideDownFadeIn: "slideDownFadeIn 2s ease-out",
       },
       fontFamily: {
         jersey: ['"Jersey 15"', "sans-serif"], // Define un alias para la fuente

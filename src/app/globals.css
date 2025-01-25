@@ -21,6 +21,10 @@
       @apply px-[22%];
     }
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* TEXT SHADOW */

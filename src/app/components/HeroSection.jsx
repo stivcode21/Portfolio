@@ -3,8 +3,11 @@ import React from 'react'
 import Image from 'next/image' // Import el componente optimizado de Next.js para cargar imágenes.
 import { TypeAnimation } from 'react-type-animation';
 import { useTheme } from '../hooks/ThemeContext';
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
+
+    const t = useTranslations("HomePage");
 
     function descargarPDF() {
         const enlace = document.createElement('a');
@@ -29,7 +32,7 @@ const HeroSection = () => {
 
                     <h1 className={`${isDarkMode ? "text-light-text" : "text-dark-text"} my-4 md:my-3 flex flex-col text-7xl font-semibold text-center md:text-left`}>
                         <span className='text-transparent font-extrabold text-center md:text-left text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-[#6812EA] to-[#ba8cff]'>
-                            Hello, I am{" "}
+                            {t("title")}{" "}
                         </span>
                         <TypeAnimation //libreria react-type-animationS
                             //secuencia consta en el nombre y el tiempo que dura la secuencia
