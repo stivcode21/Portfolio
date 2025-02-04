@@ -70,9 +70,9 @@ const EmailSection = () => {
             whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.1, }}
-            className="box grid md:grid-cols-2 py-16 md:py-32 gap-4 relative bg-center z-10 bg-cover bg-no-repeat overflow-hidden" id="contact">
+            className="box grid md:grid-cols-2 py-16 md:py-32 gap-4 relative overflow-hidden" id="contact">
 
-            <div className="z-20">
+            <div>
                 <h2 className='py-4 text-2xl md:text-3xl font-semibold tracking-[5px] text-shadow-md uppercase'>
                     {t("title")}
                 </h2>

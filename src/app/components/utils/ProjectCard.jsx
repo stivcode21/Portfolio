@@ -4,9 +4,10 @@ import Link from 'next/link'
 import Icon from './Icon'
 import { motion } from 'framer-motion'
 import { useTheme } from '@/app/hooks/ThemeContext'
+import { InformationCircleIcon } from '@heroicons/react/24/outline'
 
 //recibe props
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, icons, gitUrl, previewUrl, id, onInfoClick }) => {
     const { isDarkMode } = useTheme();
 
     return (
@@ -33,10 +34,17 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                     </div>
                 </div>
                 <div className={`${isDarkMode ? "group-hover:from-[#6812EA] group-hover:to-dark-bg group-hover:text-[#fff]  font-semibold" : "from-[#191A1C] font-medium "} rounded-b-xl relative bg-gradient-to-bl text-right py-2 px-4 z-40`}>
-                    <h5 className='text-xl md:text-xl text-center pb-4 tracking-[2px] z-40'>{title}</h5>
+
+                    <div className='relative w-full'>
+                        <h5 className='text-xl md:text-xl text-center tracking-[2px] z-40'>{title}</h5>
+                        <button onClick={() => onInfoClick(id)}>
+                            <InformationCircleIcon className='w-8 h-8 absolute top-0 right-0' />
+                        </button>
+                    </div>
+
                     <div className='z-40 flex gap-2 pb-2'>
                         {
-                            description.map((icon, i) => (
+                            icons.map((icon, i) => (
                                 <Icon key={i} name={icon.name} path={icon.path} color={icon.color} />
                             ))
                         }

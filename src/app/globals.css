@@ -1,17 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
-
 @layer utilities {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .box {
     @apply px-[7%] mx-auto;
   }
@@ -22,8 +31,9 @@
     }
   }
 
-  html {
-    scroll-behavior: smooth;
+  /* Blur-Effect */
+  .blur-effect-theme {
+    @apply bg-clip-padding backdrop-filter backdrop-blur bg-opacity-80 opacity-100 z-[100] shadow-sm shadow-slate-100 transition-all;
   }
 }
 

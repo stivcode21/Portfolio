@@ -2,7 +2,7 @@
 import React, { useTransition, useState } from 'react'
 import TabButton from './utils/TabButton'
 import Image from 'next/image'
-import { TabData } from '../data/data'
+import { TabData } from '../data/tab'
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl'
 
