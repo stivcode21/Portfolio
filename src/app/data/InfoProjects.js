@@ -92,9 +92,36 @@ export const InfoProjects = [
 
   {
     id: 4,
+    color: "#02AC52",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-wppclone.webp?alt=media&token=d9bc7ffe-d2dd-4aba-a95d-3521d4e37fed",
-    description: "name...",
+    subtitle: "Web frontend para la clonación de WhatsApp Web",
+    description:
+      "WhatsApp Clone es una web frontend desarrollada en conjunto con 6 compañeros, donde replicamos y personalizamos varias secciones de la web oficial de WhatsApp. El objetivo principal fue adquirir experiencia en trabajo en equipo y expandir mis conocimientos utilizando frameworks, ya que era la primera vez que trabajaba con ellos. A lo largo del proyecto, implementamos funcionalidades clave y personalizamos la experiencia de usuario.",
+    objetive:
+      "Aprender y mejorar las habilidades de trabajo en equipo, así como familiarizarme con el uso de frameworks y librerías como React, Material UI, y Tailwind CSS, replicando la funcionalidad y el diseño de WhatsApp Web.",
+    features: [
+      "Rutas de autenticación.",
+      "Funcionalidad para crear un perfil de usuario.",
+      "Envío de mensajes entre usuarios.",
+      "Envío de emojis mediante una librería dedicada.",
+      "Consumo de la librería Material UI para utilizar sus componentes.",
+      "Implementación de un tema de colores con Tailwind CSS.",
+      "Sección de estados de los usuarios.",
+      "Sección de edición de perfil.",
+      "Filtrado de mensajes.",
+    ],
+    skills: [
+      "Trabajo en equipo y gestión de proyectos colaborativos.",
+      "Habilidades de comunicación, responsabilidad, igualdad, amabilidad y escucha activa en reuniones, utilizando metodología Scrum.",
+      "Manejo de rutas y gestión de la navegación en React.",
+      "Consumo de librerías como Material UI y Emojis para enriquecer la experiencia del usuario.",
+    ],
+    challenges: [
+      "Aprender a manejar rutas fue uno de los mayores retos, pero mis compañeros me ayudaron a comprenderlas rápidamente.",
+      "El manejo de hooks en React fue una habilidad nueva que aprendí gracias al trabajo en equipo.",
+      "El consumo de la librería Material UI fue un desafío, pero lo resolvimos consultando la documentación oficial y aplicando los componentes necesarios.",
+    ],
   },
 
   {
