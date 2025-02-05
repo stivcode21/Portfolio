@@ -64,9 +64,30 @@ export const InfoProjects = [
 
   {
     id: 3,
+    color: "BF1416",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-moviegallery.webp?alt=media&token=c3e0ba0f-4840-4950-9700-d854393160d1",
-    description: "movie...",
+    subtitle: "Plataforma interactiva de películas",
+    description:
+      "Cineverse es una plataforma de películas que consume la API de TMDB para obtener información actualizada sobre las últimas películas. Su diseño dinámico permite una experiencia interactiva, con una pancarta principal que muestra una película aleatoria al recargar y filtros para explorar películas por categoría.",
+    objetive:
+      "Crear una plataforma de películas interactiva que se mantenga siempre actualizada mediante el consumo de APIs, proporcionando una navegación fluida y atractiva para los usuarios.",
+    features: [
+      "Pancarta principal interactiva que cambia aleatoriamente con cada recarga o categoria.",
+      "Filtros dinámicos de películas por categoría.",
+      "Consumo de la API de TMDB para obtener información en tiempo real.",
+      "Diseño completamente responsive para una experiencia fluida en cualquier dispositivo.",
+    ],
+    skills: [
+      "Consumo de APIs externas y manejo de peticiones.",
+      "Implementación de filtros dinámicos para mejorar la experiencia de usuario.",
+      "Manejo de estados en React para controlar cambios de datos y diseño.",
+      "Ampliación de conocimientos en React y optimización del flujo de datos.",
+    ],
+    challenges: [
+      "El consumo de APIs fue un desafío, ya que era la primera vez que trabajaba con una API externa, pero logré solucionarlo gracias a un curso previo.",
+      "Implementar la pancarta interactiva fue complicado, ya que debía cambiar aleatoriamente dependiendo de la categoría seleccionada. La solución fue manejar estados en React para actualizar dinámicamente la imagen y la información mostrada.",
+    ],
   },
 
   {
