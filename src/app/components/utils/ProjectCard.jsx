@@ -48,7 +48,8 @@ const ProjectCard = ({ imgUrl, title, icons, gitUrl, previewUrl, id, onInfoClick
                                 ))
                             }
                         </div>
-                        <button className='button-theme backdrop-blur-md group/button flex gap-1' onClick={() => onInfoClick(id)}>
+                        <button className='button-theme backdrop-blur-md group/button flex gap-1 items-center'
+                            onClick={() => onInfoClick(id)}>
                             Ver mas<span><ChevronDoubleRightIcon fill='#ccc' className="h-5 w-5 group-hover/button:fill-dark-primary group-hover/button:translate-x-0.5" /></span>
                         </button>
                     </div>

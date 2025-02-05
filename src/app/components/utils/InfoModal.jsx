@@ -1,10 +1,10 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { BeakerIcon, BookmarkIcon, CheckBadgeIcon, InboxArrowDownIcon, PlusIcon, RocketLaunchIcon, StarIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { BeakerIcon, BookmarkIcon, CheckBadgeIcon, FireIcon, InboxArrowDownIcon, PlusIcon, RocketLaunchIcon, StarIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import { useTheme } from "@/app/hooks/ThemeContext";
 import Image from 'next/image';
 
-const InfoModal = ({ description, imgPath, color, onClose, skills, features, challenges, objetive }) => {
+const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, features, challenges, objetive }) => {
     const { isDarkMode } = useTheme();
 
     return (
@@ -22,7 +22,7 @@ const InfoModal = ({ description, imgPath, color, onClose, skills, features, cha
                     <h1 className='text-center text-xl mb-6'>
                         <TypeAnimation
                             sequence={[
-                                'E-commerce para la venta de zapatos y gorras',
+                                subtitle,
                                 1000,
                             ]}
                             wrapper="span"
@@ -50,9 +50,11 @@ const InfoModal = ({ description, imgPath, color, onClose, skills, features, cha
                         <h2 className='text-clip ml-8 text-lg font-semibold'>{`Funcionalidades clave`}</h2>
                         <div className='text-clip ml-8 mr-6 mt-1 relative'>
                             {(features?.map((option, i) => (
-                                <div key={i} className='flex items-center mt-2'>
-                                    <CheckBadgeIcon className='w-6 h-6 text-blue-500' />
-                                    <p className='text-clip mr-6 ml-2'>{option}</p>
+                                <div key={i} className='flex items-start mt-2'>
+                                    <div className='relative ml-2'>
+                                        <CheckBadgeIcon className='w-6 h-6 text-blue-500 absolute top-0 -left-4' />
+                                    </div>
+                                    <p className='text-clip mr-6 ml-4'>{option}</p>
                                 </div>
                             )))}
                         </div>
@@ -64,9 +66,11 @@ const InfoModal = ({ description, imgPath, color, onClose, skills, features, cha
                         <h2 className='text-clip ml-8 text-lg font-semibold'>{`Habilidades`}</h2>
                         <div className='text-clip ml-8 mr-6 mt-1 relative'>
                             {(skills?.map((skill, i) => (
-                                <div key={i} className='flex items-center mt-2'>
-                                    <PlusIcon className='w-6 h-6 text-green-500' />
-                                    <p className='text-clip mr-6 ml-2'>{skill}</p>
+                                <div key={i} className='flex items-start mt-2'>
+                                    <div className='relative ml-2'>
+                                        <PlusIcon className='w-6 h-6 text-green-500 absolute top-0 -left-4' />
+                                    </div>
+                                    <p className='text-clip mr-6 ml-4'>{skill}</p>
                                 </div>
                             )))}
                         </div>
@@ -79,8 +83,10 @@ const InfoModal = ({ description, imgPath, color, onClose, skills, features, cha
                         <div className='text-clip ml-8 mr-6 mt-1 relative'>
                             {(challenges?.map((skill, i) => (
                                 <div key={i} className='flex items-start mt-2'>
-                                    <div className='rounded-full bg-orange-500 p-1.5 mt-2'></div>
-                                    <p className='text-clip mr-6 ml-2'>{skill}</p>
+                                    <div className='relative ml-2'>
+                                        <FireIcon className='w-6 h-6 text-orange-500 absolute top-0 -left-4' />
+                                    </div>
+                                    <p className='text-clip mr-6 ml-4'>{skill}</p>
                                 </div>
                             )))}
                         </div>
