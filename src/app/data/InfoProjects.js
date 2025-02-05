@@ -128,14 +128,38 @@ export const InfoProjects = [
     id: 5,
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-musicplayer.webp?alt=media&token=c9997a06-e23b-4918-8355-1d6c2e10a9e5",
-    description: "hola mundo aca musicplayer",
+    description: "name...",
   },
 
   {
     id: 6,
+    color: "#FF004B",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-userregister.webp?alt=media&token=668a8916-bfc4-4391-996d-18f0bd1880b8",
-    description: "name...",
+
+    subtitle: "Formulario de registro de usuario con validaciones dinámicas",
+    description:
+      "User Register es un formulario de registro interactivo desarrollado con JavaScript puro (Vanilla JS) y CSS, donde el usuario completa sus datos paso a paso. A medida que el formulario avanza, se muestra visualmente el progreso en la parte superior, guiando al usuario a través del proceso de registro. Incluye validaciones estrictas que impiden continuar hasta que se cumplan los requisitos establecidos, asegurando una experiencia de usuario fluida y funcional.",
+    objetive:
+      "Dominar la validación de formularios en JavaScript puro, aprender a manipular el DOM de manera efectiva y desarrollar una solución reutilizable para futuros proyectos que requieran un sistema de registro.",
+    features: [
+      "Barra de navegación que muestra los pasos completados y pendientes.",
+      "Validación de un mínimo de caracteres permitidos en el primer formulario.",
+      "Validación de campos completados antes de permitir el avance al siguiente paso.",
+      "Validación de correo electrónico y número de teléfono con un mínimo de 10 dígitos.",
+      "Funcionalidad para mostrar y ocultar la contraseña.",
+      "Opción de reiniciar el formulario si el usuario regresa atrás o finaliza el registro.",
+    ],
+    skills: [
+      "Manejo avanzado de estilos con CSS puro.",
+      "Validación de formularios sin el uso de frameworks.",
+      "Manipulación del DOM en JavaScript para crear una experiencia dinámica.",
+    ],
+    challenges: [
+      "Inicialmente, no sabía cómo acceder al DOM para hacer dinámico el formulario. Logré resolverlo mediante la manipulación del DOM con JavaScript.",
+      "Implementar la barra de navegación fue un reto, ya que requería lógica combinada entre JavaScript y CSS para mostrar correctamente el paso actual e indicar el progreso.",
+      "Hacer que los botones permitieran desplazarse entre secciones sin recargar la página fue un desafío, pero gracias a la combinación de CSS y JavaScript, logré una navegación fluida con botones de avanzar y retroceder.",
+    ],
   },
 
   {
