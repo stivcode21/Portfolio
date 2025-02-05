@@ -5,6 +5,7 @@ import Icon from './Icon'
 import { motion } from 'framer-motion'
 import { useTheme } from '@/app/hooks/ThemeContext'
 import { InformationCircleIcon } from '@heroicons/react/24/outline'
+import { ArrowUpRightIcon, ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
 
 //recibe props
 const ProjectCard = ({ imgUrl, title, icons, gitUrl, previewUrl, id, onInfoClick }) => {
@@ -37,17 +38,19 @@ const ProjectCard = ({ imgUrl, title, icons, gitUrl, previewUrl, id, onInfoClick
 
                     <div className='relative w-full'>
                         <h5 className='text-xl md:text-xl text-center tracking-[2px] z-40'>{title}</h5>
-                        <button onClick={() => onInfoClick(id)}>
-                            <InformationCircleIcon className='w-8 h-8 absolute top-0 right-0' />
-                        </button>
                     </div>
 
-                    <div className='z-40 flex gap-2 pb-2'>
-                        {
-                            icons.map((icon, i) => (
-                                <Icon key={i} name={icon.name} path={icon.path} color={icon.color} />
-                            ))
-                        }
+                    <div className='flex justify-between items-center py-2'>
+                        <div className='z-40 flex gap-2'>
+                            {
+                                icons.map((icon, i) => (
+                                    <Icon key={i} name={icon.name} path={icon.path} color={icon.color} />
+                                ))
+                            }
+                        </div>
+                        <button className='button-theme backdrop-blur-md group/button flex gap-1' onClick={() => onInfoClick(id)}>
+                            Ver mas<span><ChevronDoubleRightIcon fill='#ccc' className="h-5 w-5 group-hover/button:fill-dark-primary group-hover/button:translate-x-0.5" /></span>
+                        </button>
                     </div>
                     <div className={`bg-gradient-to-br ${!isDarkMode && "from-[#6812EA] to-dark-bg"} w-full h-full rounded-b-xl absolute opacity-0 group-hover:opacity-100 transition-all duration-300 top-0 left-0 -z-10`}></div>
                 </div>

@@ -30,7 +30,7 @@ const HeroSection = () => {
             <div className='grid grid-cols-1 z-20 lg:grid-cols-12 md:py-24'>
                 <div className='col-span-7 lg:pr-[80px] xl:pr-0 place-self-center text-center sm:text-left animate-pulse-fade-in'>
 
-                    <h1 className={`${isDarkMode ? "text-light-text" : "text-dark-text"} my-4 md:my-3 flex flex-col text-7xl font-semibold text-center md:text-left`}>
+                    <h1 className={`${isDarkMode ? "text-light-text" : "text-dark-text"} my-4 md:my-3 flex flex-col text-6xl md:text-7xl font-semibold text-center md:text-left`}>
                         <span className='text-transparent font-extrabold text-center md:text-left text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-[#6812EA] to-[#ba8cff]'>
                             {t("title")}{" "}
                         </span>

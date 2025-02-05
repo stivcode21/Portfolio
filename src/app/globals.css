@@ -31,9 +31,14 @@
     }
   }
 
+  /* button */
+  .button-theme {
+    @apply px-3 py-1 rounded active:scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm;
+  }
+
   /* Blur-Effect */
   .blur-effect-theme {
-    @apply bg-clip-padding backdrop-filter backdrop-blur bg-opacity-80 opacity-100 z-[100] shadow-sm shadow-slate-100 transition-all;
+    @apply bg-clip-padding backdrop-filter backdrop-blur bg-opacity-80 opacity-100 z-[100] shadow-md transition-all;
   }
 }
 

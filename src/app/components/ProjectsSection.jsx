@@ -44,7 +44,7 @@ const ProjectsSection = () => {
             <section id='projects' className='box h-full pb-8 bg-center z-10 relative scroll-mt-16'>
                 {
                     projectInfo && (
-                        <InfoModal info={projectInfo.description} imgPath={projectInfo.imgPath} onClose={handleCloseModal} />
+                        <InfoModal description={projectInfo.description} imgPath={projectInfo.imgPath} onClose={handleCloseModal} skills={projectInfo.skills} features={projectInfo.features} challenges={projectInfo.challenges} color={projectInfo.color} objetive={projectInfo.objetive} />
                     )
                 }
                 <motion.h2
