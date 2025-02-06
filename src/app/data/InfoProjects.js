@@ -126,9 +126,33 @@ export const InfoProjects = [
 
   {
     id: 5,
+    color: "#FFE500",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-musicplayer.webp?alt=media&token=c9997a06-e23b-4918-8355-1d6c2e10a9e5",
-    description: "name...",
+    subtitle: "Reproductor de música online con JavaScript puro",
+    description:
+      "StivSound es un reproductor de música online que permite escuchar canciones predeterminadas con un diseño responsivo, adaptado para diferentes pantallas. Desarrollado completamente con JavaScript puro, este proyecto ofrece una experiencia de usuario fluida y dinámica, integrando funcionalidades esenciales para la reproducción de audio sin necesidad de recargar la página.",
+    objetive:
+      "Aprender a manejar, interactuar y controlar archivos de audio en una aplicación web mediante JavaScript, mejorar el manejo del DOM, y reforzar el uso de clases y funciones para estructurar mejor el código.",
+    features: [
+      "Reproducción de canciones almacenadas en Firebase Storage.",
+      "Opciones para avanzar y retroceder entre canciones.",
+      "Funcionalidad para eliminar una canción de la lista.",
+      "Botón de pausa y reanudación de la reproducción.",
+      "Opción para reorganizar la lista de canciones aleatoriamente.",
+      "Indicador de duración total de la canción y contador en tiempo real del progreso de reproducción.",
+    ],
+    skills: [
+      "Mejor comprensión y manipulación del DOM con JavaScript.",
+      "Manejo y control de archivos de audio en una web.",
+      "Implementación de contadores de reproducción.",
+      "Desarrollo de una interfaz responsive adaptable a diferentes dispositivos.",
+      "Consumo de assets desde Firebase Storage, incluyendo imágenes de previsualización y archivos de audio.",
+    ],
+    challenges: [
+      "Lograr mostrar correctamente la duración de cada canción junto con su contador de reproducción fue un reto, ya que inicialmente no sabía cómo hacerlo. Lo resolví gracias a conceptos aprendidos en un video sobre manejo de audios y eventos en JavaScript.",
+      "El manejo de clases en JavaScript era algo nuevo para mí en ese momento, pero este proyecto me ayudó a mejorar mis conocimientos y a estructurar mejor el código con una programación más organizada y reutilizable.",
+    ],
   },
 
   {
@@ -185,8 +209,34 @@ export const InfoProjects = [
 
   {
     id: 10,
+    color: "#0055FF",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-moneytracking.webp?alt=media&token=87b37a24-9952-4b4c-9767-7fa3d393aac9",
-    description: "name...",
+    subtitle: "Gestor de ingresos y egresos con gráficos dinámicos",
+    description:
+      "Money Tracking es una aplicación web que permite gestionar ingresos y egresos, mostrando un balance actualizado y un registro detallado de las transacciones. Además, integra una gráfica interactiva que representa el balance disponible utilizando la librería ECharts. Desarrollado con JavaScript puro, este proyecto fue una introducción a la manipulación del DOM, el cálculo de totales y porcentajes, y el uso de librerías externas.",
+    objetive:
+      "Crear un sistema de control financiero con balance de ingresos y egresos, acompañado de una visualización gráfica, para mejorar mis habilidades en el manejo del DOM, cálculos dinámicos en JavaScript y el uso de librerías externas.",
+    features: [
+      "Consumo de la librería de gráficos ECharts para visualización del balance.",
+      "Input para agregar ingresos y egresos.",
+      "Cálculo dinámico del ingreso disponible.",
+      "Cálculo y visualización del total de ingresos y egresos.",
+      "Botón para eliminar ingresos o egresos y recalcular el balance automáticamente.",
+      "Registro de todo el historial de transacciones.",
+    ],
+    skills: [
+      "Primer contacto con la manipulación del DOM en JavaScript.",
+      "Implementación de cálculos para obtener totales y porcentajes.",
+      "Uso de la librería ECharts para gráficos dinámicos.",
+      "Extracción de valores desde inputs y manejo de eventos en JavaScript.",
+      "Código modular con archivos JavaScript separados.",
+      "Trabajo con clases en JavaScript para una mejor organización del código.",
+    ],
+    challenges: [
+      "Lograr que, al eliminar un ingreso o egreso, los cálculos del balance se actualizaran correctamente y se reflejaran en la gráfica. Lo resolví implementando una función `cargaApp` que centraliza todas las funciones necesarias y las ejecuta cada vez que hay un cambio.",
+      "Obtener y gestionar correctamente los valores de los inputs para asignarlos como ingreso o egreso. Lo logré accediendo al DOM junto con eventos y operadores lógicos dentro de una función específica.",
+      "Como era la primera vez usando una librería externa, entender su documentación y hacer que se integrara correctamente con los valores del balance fue un reto. Sin embargo, logré actualizar la gráfica dinámicamente con cada cambio y mostrar los porcentajes correspondientes.",
+    ],
   },
 ];
