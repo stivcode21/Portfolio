@@ -215,9 +215,27 @@ export const InfoProjects = [
 
   {
     id: 8,
+    color: "#FF0000",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-youtube.webp?alt=media&token=c446e186-1be2-40c7-aa01-039e50fdd81e",
-    description: "...",
+    subtitle: "Clon de la interfaz de inicio de YouTube",
+    description:
+      "Design YouTube fue mi segundo proyecto de diseño web con HTML y CSS puro, en el que repliqué la interfaz de inicio de YouTube en su versión blanca. Además de trabajar en el diseño responsive, agregué una funcionalidad con JavaScript para abrir y cerrar el sidebar.",
+    objetive:
+      "Reforzar mis conocimientos en el modelo de cajas con HTML y CSS, mientras implementaba una funcionalidad interactiva con JavaScript para manejar el sidebar. Este proyecto me permitió practicar la manipulación del DOM, eventos y estructuras condicionales.",
+    features: [
+      "Botón para abrir y cerrar el menú lateral.",
+      "Diseño responsive adaptable a diferentes pantallas.",
+    ],
+    skills: [
+      "Manejo de CSS Grid y sus propiedades.",
+      "Primer contacto con JavaScript.",
+      "Manipulación del DOM con eventos en JavaScript.",
+    ],
+    challenges: [
+      "Este proyecto me tomó aproximadamente 10 días después de ver un curso de JavaScript.",
+      "Tuve dificultades al principio con la implementación del sidebar, pero la documentación y mis apuntes del curso me ayudaron a resolverlo.",
+    ],
   },
 
   {
