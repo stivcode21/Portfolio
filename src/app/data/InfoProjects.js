@@ -188,23 +188,63 @@ export const InfoProjects = [
 
   {
     id: 7,
+    color: "#00AEFF",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-clotingstore.webp?alt=media&token=82bf7af0-f457-464f-81bc-b83f70bfd63f",
-    description: "name...",
+    subtitle: "Diseño de tienda de ropa con React y Tailwind CSS",
+    description:
+      "Clothing Store es un proyecto enfocado en la presentación de productos en una tienda de ropa, con un diseño adaptativo y una interfaz intuitiva. Incluye una serie de cards para mostrar productos, un menú lateral para cambiar de sección, una barra de navegación superior para filtrar por tipo de prenda y una barra de búsqueda. Este proyecto está centrado en el diseño y la maquetación con React y Tailwind CSS.",
+    objetive:
+      "Practicar el diseño responsivo y mejorar mis habilidades en React y Tailwind CSS. Aunque este proyecto tiene pocas funciones interactivas, fue clave para afianzar el manejo de estados con useState y la estructura de un diseño adaptable.",
+    features: [
+      "Menú de carrito con apertura y cierre mediante estado.",
+      "Barra de navegación lateral para cambiar de sección.",
+      "Diseño de grillas completamente adaptadas a diferentes tamaños de pantalla.",
+    ],
+    skills: [
+      "Mejorar mis habilidades en Tailwind CSS.",
+      "Uso del hook useState en React.",
+      "Diseño responsivo optimizado.",
+      "Familiarización con frameworks y herramientas como Vite para React.",
+    ],
+    challenges: [
+      "Manejo de la lógica de useState para la interacción del carrito, ya que en ese momento aún no dominaba bien el manejo de estados en React.",
+      "Familiarizarme con Tailwind CSS y mejorar su implementación en diseños adaptativos.",
+    ],
   },
 
   {
     id: 8,
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-youtube.webp?alt=media&token=c446e186-1be2-40c7-aa01-039e50fdd81e",
-    description: "name...",
+    description: "...",
   },
 
   {
     id: 9,
+    color: "#1877F2",
     imgPath:
       "https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/imgPortfolio%2Fletras-facebook.webp?alt=media&token=4bd3b48b-129c-41fa-9d30-a45f7f22d249",
-    description: "name...",
+    subtitle: "Clon de la página de inicio de sesión de Facebook clásico",
+    description:
+      "Design Facebook es un proyecto de diseño web en HTML y CSS que replica la interfaz de inicio de sesión de la versión clásica de Facebook. Fue mi primer proyecto después de ver un curso de HTML y CSS, donde puse en práctica conceptos de diseño responsive, modelo de cajas y Flexbox.",
+    objetive:
+      "Poner a prueba mis conocimientos adquiridos en un curso de diseño web, enfocándome en la maquetación responsive y en el uso de Flexbox. Además, documenté cada paso del proceso durante 8 días para reforzar mi aprendizaje.",
+    features: [
+      "Diseño responsive adaptable a diferentes pantallas.",
+      "HTML y CSS organizados en archivos separados.",
+      "Uso de media queries para mejorar la adaptabilidad.",
+    ],
+    skills: [
+      "Diseño responsive.",
+      "Manejo del modelo de cajas en CSS.",
+      "Uso de Flebox.",
+      "Uso de la cascada de CSS y organización de clases.",
+    ],
+    challenges: [
+      "Como era mi primer proyecto real, me tomó tiempo comprender y aplicar correctamente los conceptos de diseño web.",
+      "Tuve dificultades iniciales con Flexbox y la estructura del modelo de cajas, pero logré solucionarlas documentando mi proceso y aprendiendo de los errores.",
+    ],
   },
 
   {
