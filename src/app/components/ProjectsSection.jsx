@@ -55,6 +55,12 @@ const ProjectsSection = () => {
                     className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md uppercase'>
                     {t("title")}
                 </motion.h2>
+                <div
+                    className='text-white flex flex-row justify-center items-center gap-2 py-4'>
+                    <ProjectTag onClick={handleTagChange} name="Featured" title={t("featured")} isSelected={tag === "Featured"} />
+                    <ProjectTag onClick={handleTagChange} name="Starter" title={t("starter")} isSelected={tag === "Starter"} />
+                    <ProjectTag onClick={handleTagChange} name="Desing" title={t("desing")} isSelected={tag === "Desing"} />
+                </div>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-6'>
                     {filteredProjects.map((project) => ( //el parametro recorre cada uno de los objetos del array
                         <>
@@ -71,12 +77,6 @@ const ProjectsSection = () => {
                             />
                         </>
                     ))}
-                </div>
-                <div
-                    className='text-white flex flex-row justify-center items-center gap-2 py-4'>
-                    <ProjectTag onClick={handleTagChange} name="Featured" title={t("featured")} isSelected={tag === "Featured"} />
-                    <ProjectTag onClick={handleTagChange} name="Starter" title={t("starter")} isSelected={tag === "Starter"} />
-                    <ProjectTag onClick={handleTagChange} name="Desing" title={t("desing")} isSelected={tag === "Desing"} />
                 </div>
             </section>
         </>

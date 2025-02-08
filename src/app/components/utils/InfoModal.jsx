@@ -2,10 +2,12 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { BeakerIcon, BookmarkIcon, CheckBadgeIcon, FireIcon, InboxArrowDownIcon, PlusIcon, RocketLaunchIcon, StarIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import { useTheme } from "@/app/hooks/ThemeContext";
+import { useTranslations } from "next-intl";
 import Image from 'next/image';
 
 const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, features, challenges, objetive }) => {
     const { isDarkMode } = useTheme();
+    const t = useTranslations("Projects-info");
 
     return (
         <div className='flex items-center justify-center w-full h-full relative transition-all ease-in-out z-50'>
@@ -18,11 +20,12 @@ const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, fea
                 </button>
 
                 <div>
+                    {/* Image previe */}
                     <Image src={imgPath} alt="letras-proyect" width={400} height={250} className='mx-auto -mt-4 object-contain' />
                     <h1 className='text-center text-xl mb-6'>
                         <TypeAnimation
                             sequence={[
-                                subtitle,
+                                t(subtitle),
                                 1000,
                             ]}
                             wrapper="span"
@@ -33,28 +36,28 @@ const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, fea
                     {/*Descripcion */}
                     <div className='relative mb-3'>
                         <BookmarkIcon className='w-6 h-6 absolute top-0 left-0' style={{ color: color }} />
-                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{`Descripcion`}</h2>
-                        <p className='text-wrap ml-8 mr-1 md:mr-6 mt-1'>{description}</p>
+                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{t("description")}</h2>
+                        <p className='text-wrap ml-8 mr-1 md:mr-6 mt-1'>{t(description)}</p>
                     </div>
 
                     {/*Objetivo */}
                     <div className='relative mb-3'>
                         <StarIcon className='w-6 h-6 absolute top-0 left-0' style={{ color: color }} />
-                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{`Objetivo`}</h2>
-                        <p className='text-wrap ml-8 mr-1 md:mr-6 mt-1'>{objetive}</p>
+                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{t('objective')}</h2>
+                        <p className='text-wrap ml-8 mr-1 md:mr-6 mt-1'>{t(objetive)}</p>
                     </div>
 
                     {/*Funcionalidades clave */}
                     <div className='relative mb-3'>
                         <BeakerIcon className='w-6 h-6 absolute top-0 left-0' style={{ color: color }} />
-                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{`Funcionalidades clave`}</h2>
+                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{t('features')}</h2>
                         <div className='text-wrap ml-8 mr-1 md:mr-6 mt-1 relative'>
                             {(features?.map((option, i) => (
                                 <div key={i} className='flex items-start mt-2'>
                                     <div className='relative ml-2'>
                                         <CheckBadgeIcon className='w-6 h-6 text-blue-500 absolute top-0 -left-4' />
                                     </div>
-                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{option}</p>
+                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{t(option)}</p>
                                 </div>
                             )))}
                         </div>
@@ -63,14 +66,14 @@ const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, fea
                     {/* Habilidades */}
                     <div className='relative mb-3'>
                         <InboxArrowDownIcon className='w-6 h-6 absolute top-0 left-0' style={{ color: color }} />
-                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{`Habilidades`}</h2>
+                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{t('skills')}</h2>
                         <div className='text-wrap ml-8 mr-1 md:mr-6 mt-1 relative'>
                             {(skills?.map((skill, i) => (
                                 <div key={i} className='flex items-start mt-2'>
                                     <div className='relative ml-2'>
                                         <PlusIcon className='w-6 h-6 text-green-500 absolute top-0 -left-4' />
                                     </div>
-                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{skill}</p>
+                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{t(skill)}</p>
                                 </div>
                             )))}
                         </div>
@@ -79,14 +82,14 @@ const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, fea
                     {/* desafios */}
                     <div className='relative mb-3'>
                         <RocketLaunchIcon className='w-6 h-6 absolute top-0 left-0' style={{ color: color }} />
-                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{`Desafios`}</h2>
+                        <h2 className='text-wrap ml-8 text-lg font-semibold'>{t('challenge')}</h2>
                         <div className='text-wrap ml-8 mr-1 md:mr-6 mt-1 relative'>
                             {(challenges?.map((skill, i) => (
                                 <div key={i} className='flex items-start mt-2'>
                                     <div className='relative ml-2'>
                                         <FireIcon className='w-6 h-6 text-orange-500 absolute top-0 -left-4' />
                                     </div>
-                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{skill}</p>
+                                    <p className='text-wrap mr-1 md:mr-6 ml-4'>{t(skill)}</p>
                                 </div>
                             )))}
                         </div>

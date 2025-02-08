@@ -80,12 +80,12 @@ const Navbar = () => {
                         // si el menu no esta abierto, que boton muestra
                         !NavbarOpen ?
                             (<button onClick={() => setNavbarOpen(true)}
-                                className={`flex items-center px-3 py-2 border ${isDarkMode ? "border-light-text hover:text-light-textGray hover:border-light-textGray" : "border-dark-text hover:border-dark-textGray text-dark-text"}`}>
+                                className={`flex items-center px-3 py-2 border rounded-sm ${isDarkMode ? "border-light-text hover:text-light-textGray hover:border-light-textGray" : "border-dark-text hover:border-dark-textGray text-dark-text"}`}>
                                 <Bars3Icon className='h-6 w-6'></Bars3Icon>
                             </button>)
                             :
                             (<button onClick={() => setNavbarOpen(false)}
-                                className={`flex items-center px-3 py-2 border ${isDarkMode ? "border-light-text hover:text-light-textGray hover:border-light-textGray" : "border-dark-text hover:border-dark-textGray text-dark-text"}`}>
+                                className={`flex items-center px-3 py-2 border rounded-sm ${isDarkMode ? "border-light-text hover:text-light-textGray hover:border-light-textGray" : "border-dark-text hover:border-dark-textGray text-dark-text"}`}>
                                 <XMarkIcon className='h-6 w-6'></XMarkIcon>
                             </button>)
                     }

@@ -19,7 +19,7 @@ const LanguageMenu = () => {
                 <LanguageIcon
                     className={`w-6 h-6 icon-style ${isDarkMode
                         ? "fill-light-text hover:fill-light-textGray"
-                        : "fill-dark-textGray hover:fill-dark-text"
+                        : "fill-white hover:fill-dark-textGray"
                         }`} />
             </button>
 

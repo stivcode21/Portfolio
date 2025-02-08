@@ -189,7 +189,7 @@ export const ProyectsData = [
   },
   {
     id: 7,
-    title: "Cloting Store",
+    title: "Clothing Store",
     icons: [
       {
         name: "React",

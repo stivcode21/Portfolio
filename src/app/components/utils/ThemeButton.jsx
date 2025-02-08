@@ -8,7 +8,7 @@ const ThemeButton = () => {
         <>
 
             <button onClick={toggleTheme}>
-                {isDarkMode ? <MoonIcon className="w-6 h-6 icon-style" /> : <SunIcon className="w-6 h-6" />}
+                {isDarkMode ? <MoonIcon className="w-6 h-6 icon-style fill-light-text hover:fill-light-textGray" /> : <SunIcon className="w-6 h-6 icon-styl fill-white hover:fill-dark-textGray" />}
             </button>
         </>
     )
