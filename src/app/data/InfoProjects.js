@@ -45,7 +45,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-Frameonix.skill-one",
-      "Project-Frameonixskill-two",
+      "Project-Frameonix.skill-two",
       "Project-Frameonix.skill-three",
       "Project-Frameonix.skill-four",
       "Project-Frameonix.skill-five",
@@ -74,7 +74,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-CineVerse.skill-one",
-      "Project-CineVerseskill-two",
+      "Project-CineVerse.skill-two",
       "Project-CineVerse.skill-three",
       "Project-CineVerse.skill-four",
     ],
@@ -105,7 +105,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-WhatsappClone.skill-one",
-      "Project-WhatsappCloneskill-two",
+      "Project-WhatsappClone.skill-two",
       "Project-WhatsappClone.skill-three",
       "Project-WhatsappClone.skill-four",
     ],
@@ -163,7 +163,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-UserRegister.skill-one",
-      "Project-UserRegisterskill-two",
+      "Project-UserRegister.skill-two",
       "Project-UserRegister.skill-three",
     ],
     challenges: [
@@ -188,7 +188,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-ClothingStore.skill-one",
-      "Project-ClothingStoreskill-two",
+      "Project-ClothingStore.skill-two",
       "Project-ClothingStore.skill-three",
       "Project-ClothingStore.skill-four",
     ],
@@ -212,7 +212,7 @@ export const InfoProjects = [
     ],
     skills: [
       "Project-DesignYouTube.skill-one",
-      "Project-DesignYouTubeskill-two",
+      "Project-DesignYouTube.skill-two",
       "Project-DesignYouTube.skill-three",
     ],
     challenges: [
