@@ -17,11 +17,10 @@ const Icon = ({ name, path, color }) => {
             }}
             onMouseLeave={(e) => {
                 e.currentTarget.querySelector('svg').style.fill = theme;
-            }}
-        >
+            }} >
             <svg
                 role="img"
-                className="w-9 h-9 hover:scale-110"
+                className="w-10 h-10 hover:scale-110"
                 viewBox={viewBox}
                 xmlns="http://www.w3.org/2000/svg"
                 style={{ fill: theme }} >

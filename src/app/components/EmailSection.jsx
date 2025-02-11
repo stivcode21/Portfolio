@@ -73,7 +73,7 @@ const EmailSection = () => {
             className="box grid md:grid-cols-2 py-16 md:py-32 gap-4 relative overflow-hidden" id="contact">
 
             <div>
-                <h2 className='py-4 text-2xl md:text-3xl font-semibold tracking-[5px] text-shadow-md uppercase'>
+                <h2 className='py-4 text-4xl md:text-5xl font-extrabold text-shadow-lg uppercase'>
                     {t("title")}
                 </h2>
                 <p className="text-lg mb-4 max-w-md">
@@ -136,7 +136,7 @@ const EmailSection = () => {
                             required
                         />
                     </div>
-                    <button type="submit" className="bg-gradient-to-br from-dark-primary to-dark-bg hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full transition-all ease-out">
+                    <button type="submit" className="bg-gradient-to-br from-dark-primary to-dark-bg hover:scale-[1.03] border-2 border-[#6812EA] text-white font-medium py-2.5 rounded-lg w-full active:scale-90 transition-all ease-out">
                         {t("button")}
                     </button>
                     <div>

@@ -55,13 +55,13 @@ const HeroSection = () => {
                         {t("paragraph")}
                     </p>
                     <div>
-                        <button onClick={sectionContact} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:from-[#6812EA] hover:to-[#0F0F0F] transition-all ease-out duration-400'>
+                        <button onClick={sectionContact} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 md:mr-4 group rounded-full bg-transparent bg-gradient-to-br hover:from-[#6812EA] hover:to-[#0F0F0F] active:scale-90 transition-all ease-out duration-200'>
                             <span className='block px-5 py-2 rounded-full bg-gradient-to-tr from-[#0F0F0F] to-[#6812EA] group-hover:from-[#6812EA] group-hover:to-[#0F0F0F] text-white '>
                                 {t("button-1")}
                             </span>
                         </button>
 
-                        <button onClick={descargarPDF} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 rounded-full bg-transparent group bg-gradient-to-br from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white transition-all ease-out duration-400'>
+                        <button onClick={descargarPDF} className='px-1 py-1 w-full md:w-fit hover:scale-[1.03] mt-4 rounded-full bg-transparent group bg-gradient-to-br from-[#6812EA] to-[#6812EA] hover:from-[#6812EA] hover:to-[#0F0F0F] text-white active:scale-90 transition-all ease-out duration-200'>
                             <span className='block bg-transparent bg-gradient-to-br from-[#6812EA] to-[#0F0F0F] group-hover:to-[#6812EA] group-hover:from-[#0F0F0F] rounded-full px-5 py-2'>
                                 {t("button-2")}
                             </span>

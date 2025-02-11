@@ -41,7 +41,7 @@ const ProjectsSection = () => {
 
     return (
         <>
-            <section id='projects' className='box h-full pb-8 bg-center z-10 relative scroll-mt-16'>
+            <section id='projects' className='box h-full pb-8 bg-center z-10 relative scroll-mt-20'>
                 {
                     projectInfo && (
                         <InfoModal description={projectInfo.description} imgPath={projectInfo.imgPath} onClose={handleCloseModal} skills={projectInfo.skills} features={projectInfo.features} challenges={projectInfo.challenges} color={projectInfo.color} objetive={projectInfo.objetive} subtitle={projectInfo.subtitle} />
@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                     whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1, }}
-                    className='py-6 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md uppercase'>
+                    className='md:py-4 text-4xl md:text-5xl font-extrabold text-shadow-lg text-center uppercase'>
                     {t("title")}
                 </motion.h2>
                 <div

@@ -6,7 +6,7 @@ const NavLink = ({ href, title }) => {  // pasamos 2 parametros para href y el t
 
     return (
         <Link href={href} className={`${isDarkMode ? "text-light-text hover:text-light-textGray" : "text-dark-textGray hover:text-dark-text"}
-        block uppercase py-2 pl-3 pr-4 text-[#ADB7BE] text-lg font-logo rounded`}>
+        block uppercase py-2 pl-3 pr-4 text-[#ADB7BE] text-lg font-logo rounded active:scale-90 transition-all ease-in-out`}>
             {title}
         </Link >
     )

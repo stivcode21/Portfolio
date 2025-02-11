@@ -21,7 +21,7 @@ const AboutSection = () => {
 
     return (
         <section id='about' className='h-full md:h-screen w-full z-10 flex pb-7 bg-cover bg-center bg-no-repeat relative scroll-mt-16 md:scroll-mt-0' >
-            <div className={`box md:grid md:grid-cols-2 gap-10 z-20 items-center xl:gap-4 sm:my-auto flex flex-col-reverse md:flex-row`}>
+            <div className={`box md:grid md:grid-cols-2 gap-10 z-20 items-center xl:gap-4 sm:my-auto flex justify-center flex-col-reverse md:flex-row`}>
                 <motion.div
                     initial={{ opacity: 0, translateY: "100px", scale: 0.5 }}
                     whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
@@ -40,11 +40,11 @@ const AboutSection = () => {
 
                 <div className='text-left flex flex-col justify-center h-full'>
                     <motion.h2
-                        initial={{ opacity: 0, translateY: "-50px", scale: 0.5 }}
+                        initial={{ opacity: 0, translateY: "50px", scale: 0.5 }}
                         whileInView={{ opacity: 1, translateY: "0", scale: 1 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.1, }}
-                        className='py-4 text-2xl md:text-3xl font-semibold text-center tracking-[5px] text-shadow-md uppercase'>
+                        className='py-4 text-4xl md:text-5xl font-extrabold text-shadow-lg text-center uppercase'>
                         {t("title")}
                     </motion.h2>
                     <motion.div

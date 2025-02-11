@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hello, I am",
-    "paragraph": "Every project is an opportunity to create something unique. I'm completely committed to my professional development and have a great willingness to face new challenges. Collaboration is key to transforming ideas into extraordinary results, and I'm ready to work with passionate people. Let's build something memorable together!",
+    "paragraph": "Code is my language and creativity my tool. I am passionate about building digital experiences that not only work, but leave a mark. I enjoy every challenge as an opportunity to innovate, improve and learn. If you are looking for someone who combines technique and vision to grow a project, I am here. ¡On Fire!",
     "button-1": "Hire me",
     "button-2": "Download CV"
   },
@@ -13,7 +13,7 @@
   },
   "About": {
     "title": "About me",
-    "paragraph": "I'm a junior frontend developer passionate about creating responsive, user-friendly websites. Through self-study, I have developed strong skills in web technologies like HTML, CSS, JavaScript, React, and more. Currently, I am expanding my knowledge with game development in Unity, combining my web experience with a creative approach to problem-solving. I'd love to connect with people who share this same passion.",
+    "paragraph": "For over three years, my world revolved around engines, parts, and diagnosing mechanical problems. But one day I decided to take a different route: swap physical tools for lines of code. This is how my journey in web development began. Through perseverance and self-taught learning, I have explored multiple technologies, methodologies and structures, always with the conviction that the best way to learn is to face new challenges every day. The logic and problem solving that I developed in my previous profession have been key in this process, allowing me to approach each project with precision and creativity.",
     "skills": "Skills",
     "education": "Education",
     "certifications": "Certifications"
@@ -22,7 +22,8 @@
     "title": "My Projects",
     "featured": "Featured",
     "starter": "Starter",
-    "desing": "Desing"
+    "desing": "Desing",
+    "btn": "See More"
   },
   "Email": {
     "title": "let's Connect",

@@ -17,7 +17,7 @@ const ProjectTag = ({ name, title, onClick, isSelected }) => {
     return (
         <div className="w-fit text-lg mt-4 font-medium">
             <button
-                className={`${buttonClasses} cursor-pointer flex gap-x-4 relative group`}
+                className={`${buttonClasses} cursor-pointer flex gap-x-4 relative group active:scale-90 transition-all ease-in-out`}
                 onClick={() => onClick(name)}>
                 {title}
                 <span className={spanClasses}></span>

@@ -1,7 +1,7 @@
 {
   "HomePage": {
-    "title": "hola, soy",
-    "paragraph": "Cada proyecto es una oportunidad para crear algo único. Estoy completamente comprometido con mi desarrollo profesional y tengo una gran disposición para enfrentar nuevos desafíos. La colaboración es clave para transformar ideas en resultados extraordinarios y estoy listo para trabajar con personas apasionadas. ¡Construyamos juntos algo memorable!",
+    "title": "Hola, Soy",
+    "paragraph": "El código es mi lenguaje y la creatividad mi herramienta. Me apasiona construir experiencias digitales que no solo funcionen, sino que dejen huella. Disfruto cada reto como una oportunidad para innovar, mejorar y aprender. Si estás buscando a alguien que combine técnica y visión para hacer crecer un proyecto, aquí estoy. ¡On Fire!",
     "button-1": "Contrateme",
     "button-2": "Descargar CV"
   },
@@ -13,7 +13,7 @@
   },
   "About": {
     "title": "Sobre mi",
-    "paragraph": "Soy un desarrollador frontend junior apasionado por crear sitios web responsivos y fáciles de usar. A través del autoestudio, he desarrollado sólidas habilidades en tecnologías web como HTML, CSS, JavaScript, React y más. Actualmente, estoy ampliando mis conocimientos con el desarrollo de juegos en Unity, combinando mi experiencia web con un enfoque creativo en la resolución de problemas. Me encantaría conectarme con personas que comparten esta misma pasión.",
+    "paragraph": "Durante más de tres años, mi mundo giró en torno a motores, piezas y diagnósticos de problemas mecánicos. Pero un día decidí tomar una ruta distinta: cambiar las herramientas físicas por líneas de código. Así comenzó mi viaje en el desarrollo web. A través de la constancia y el aprendizaje autodidacta, he explorado múltiples tecnologías, metodologías y estructuras, siempre con la convicción de que la mejor forma de aprender es enfrentarse a nuevos retos cada día. La lógica y resolución de problemas que desarrollé en mi anterior profesión han sido clave en este proceso, permitiéndome abordar cada proyecto con precisión y creatividad.",
     "skills": "Habilidades",
     "education": "Educacion",
     "certifications": "Certificaciones"
@@ -22,7 +22,8 @@
     "title": "Mis Proyectos",
     "featured": "Destacado",
     "starter": "Basico",
-    "desing": "Diseño"
+    "desing": "Diseño",
+    "btn": "Ver Mas"
   },
   "Email": {
     "title": "Conectemos",
