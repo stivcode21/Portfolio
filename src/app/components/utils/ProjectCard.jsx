@@ -22,7 +22,7 @@ const ProjectCard = ({ imgUrl, title, icons, gitUrl, previewUrl, id, onInfoClick
                 amount: 0.1, // Activa cuando 10% es visible
             }}
             className='projects-section'>
-            <div className={`group rounded-2xl shadow-lg shadow-[#0000005b] border-4 ${isDarkMode ? "hover:border-[#6812EA] outline outline-1 outline-[#aaa] hover:shadow-[#6812EA] hover:outline-none" : "border-[#191A1C] hover:border-[#6812EA] hover:shadow-[#6812ea59]"} hover:scale-[1.03] transition-all ease-in-out`}>
+            <div className={`group rounded-2xl shadow-lg shadow-[#0000005b] border-4 ${isDarkMode ? "hover:border-[#6812EA] border-[#dad1ff] outline outline-1 outline-[#aaa] hover:shadow-[#6812EA] hover:outline-none" : "border-[#191A1C] hover:border-[#6812EA] hover:shadow-[#6812ea59]"} hover:scale-[1.03] transition-all ease-in-out`}>
                 <div className="h-52 w-full md:h-52 rounded-t-xl relative group"
                     style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 

@@ -16,7 +16,7 @@ module.exports = {
           textGray: "#ADB7BE",
         },
         light: {
-          bg: "#F8F8F8",
+          bg: "#ece7ff",
           text: "#000000",
           textGray: "#AAAAAA",
         },

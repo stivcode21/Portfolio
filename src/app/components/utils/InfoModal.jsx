@@ -11,8 +11,8 @@ const InfoModal = ({ description, subtitle, imgPath, color, onClose, skills, fea
 
     return (
         <div className='flex items-center justify-center w-full h-full relative transition-all ease-in-out z-50'>
-            <div className={`w-[90%] md:w-1/2 h-[85%] animate-slideFromLeftFadeIn rounded-lg blur-effect-theme fixed py-4 px-6 border border-[#666] top-0 mt-20 overflow-y-auto [&::-webkit-scrollbar]:hidden 
-                ${isDarkMode ? "bg-white/70 shadow-black/60" : "bg-dark-bg/85 shadow-black/70"}`}>
+            <div className={`w-[90%] md:w-1/2 h-[85%] animate-slideFromLeftFadeIn rounded-lg blur-effect-theme fixed py-4 px-6 border border-[#a27fff] top-0 mt-20 overflow-y-auto [&::-webkit-scrollbar]:hidden 
+                ${isDarkMode ? "bg-light-bg/80 shadow-black/60" : "bg-dark-bg/85 shadow-black/70"}`}>
                 {/* boton para cerrar */}
                 <button onClick={onClose} className={`sticky -ml-4 -mt-4 z-20 top-0 right-0 rounded-full 
                     ${isDarkMode ? "text-black" : "text-white"}`}>
